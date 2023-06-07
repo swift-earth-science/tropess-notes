@@ -1,0 +1,2 @@
+sphinxext-rediraffe==0.2.7
+livereload==2.6.3

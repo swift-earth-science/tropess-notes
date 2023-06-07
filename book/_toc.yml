@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: setup 
+  sections:
+  - file: setup-macos.md  
+  - file: data-access-macos.md  
+- file: quick-start 
+  sections:
+  - file: quick-start-download-data  
+  - file: quick-start-scatter-plot-methane-column
+  - file: quick-start-gridded-plot-methane-column
+  - file: quick-start-scatter-plot-methane-profile

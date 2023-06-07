@@ -8,6 +8,7 @@ title: TROPESS Notes
 author: Kantchev V, Swift Software Group
 copyright: "2023"
 logo: logo.svg
+exclude_patterns: [data, _build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 
 # Auto re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

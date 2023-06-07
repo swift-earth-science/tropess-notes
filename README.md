@@ -4,6 +4,10 @@
 
 A practical guide to using TROPESS data products delivered as Python notebooks 
 
+## Published Book
+
+You can find the published book here: [TROPESS Notes](https://swiftsoftwaregroup.github.io/tropess-notes/)
+
 > Instructions are for macOS
 
 ## Configure

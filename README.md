@@ -1,5 +1,7 @@
 # tropess-notes
 
+[![DOI](https://zenodo.org/badge/650417988.svg)](https://zenodo.org/badge/latestdoi/650417988)
+
 A practical guide to using TROPESS data products delivered as Python notebooks 
 
 > Instructions are for macOS
@@ -50,3 +52,4 @@ Open in browser:
 ```bash
 open http://localhost:4000
 ```
+[![DOI](https://zenodo.org/badge/650417988.svg)](https://zenodo.org/badge/latestdoi/650417988)

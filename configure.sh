@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
 
+echo "Python ..."
+
+# Do not install Python if in Anaconda environment or we are on Docker container
+if [[ -z "$CONDA_DEFAULT_ENV" && ! -f /.dockerenv ]]
+then
+    # install Python 3.10.0 if not installed
+    pyenv install 3.10.0 --skip-existing
+    pyenv versions
+
+    # use Python 3 from .python-version for local development
+    eval "$(pyenv init -)"
+fi
+
 # create virtual environment
 python3 -m venv .venv
 

@@ -30,3 +30,4 @@ pip install -r book/requirements.txt
 
 mkdir -p ./book/data
 mkdir -p ./book/scripts
+mkdir -p ./book/images

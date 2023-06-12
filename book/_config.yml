@@ -13,7 +13,7 @@ exclude_patterns: [data, _build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 # Auto re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: auto
+  execute_notebooks: cache
 
 # Define the name of the latex output file for PDF builds
 latex:

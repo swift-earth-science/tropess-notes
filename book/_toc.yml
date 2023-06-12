@@ -3,14 +3,32 @@
 
 format: jb-book
 root: index
-chapters:
-- file: setup 
-  sections:
-  - file: setup-macos.md  
-  - file: data-access-macos.md  
-- file: quick-start 
-  sections:
-  - file: quick-start-download-data  
-  - file: quick-start-scatter-plot-methane-column
-  - file: quick-start-gridded-plot-methane-column
-  - file: quick-start-scatter-plot-methane-profile
+parts:
+  - caption: Introduction
+    chapters:
+    - file: intro-instruments  
+    - file: intro-collections  
+    - file: intro-product-flavors  
+    - file: intro-datasets
+      sections:
+      - file: intro-datasets-airs-omi 
+
+  - caption: Data Analysis
+    chapters:
+    - file: setup
+      sections:
+      - file: setup-macos
+      - file: data-access-macos
+    - file: quick-start 
+      sections:
+      - file: quick-start-download-data  
+      - file: quick-start-scatter-plot-methane-column
+      - file: quick-start-gridded-plot-methane-column
+      - file: quick-start-scatter-plot-methane-profile
+  - caption: Significant Events
+    chapters:
+    - file: canadian-fires
+      sections:
+      - file: canadian-fires-download-data
+      - file: canadian-fires-gridded-plot-carbon-monoxide-column
+  

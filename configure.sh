@@ -29,3 +29,4 @@ pip install -r dev/requirements.txt
 pip install -r book/requirements.txt
 
 mkdir -p ./book/data
+mkdir -p ./book/scripts

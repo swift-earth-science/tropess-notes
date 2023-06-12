@@ -31,6 +31,7 @@ parts:
       sections:
       - file: brazilian-fires-download-data
       - file: brazilian-fires-gridded-plot-carbon-monoxide-column
+      - file: brazilian-fires-gridded-plot-ammonia-column
     - file: canadian-fires
       sections:
       - file: canadian-fires-download-data

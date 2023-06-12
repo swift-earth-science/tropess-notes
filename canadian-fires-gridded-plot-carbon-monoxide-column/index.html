@@ -180,11 +180,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Significant Events</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Major Events</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../brazilian-fires/">Brazilian Fires (2022)</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-download-data/">Download Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-ammonia-column/">Brazilian Fires - Ammonia (NH3) - CrIS JPSS-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-carbon-monoxide-column/">Brazilian Fires - Carbon Monoxide (CO) - CrIS JPSS-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-peroxyacetyl-nitrate-column/">Brazilian Fires - PeroxyAcetyl Nitrate (PAN) - CrIS JPSS-1</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../canadian-fires/">Canadian Fires (2023)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -467,9 +469,11 @@ document.write(`
                 <span class="n">llcrnrlat</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">urcrnrlat</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span>  <span class="c1"># set latitude limits to 10 and 80</span>
                 <span class="n">llcrnrlon</span><span class="o">=-</span><span class="mi">170</span><span class="p">,</span> <span class="n">urcrnrlon</span><span class="o">=-</span><span class="mi">40</span><span class="p">)</span>  <span class="c1"># set longitude limits to -170 and -40</span>
 
-    <span class="n">m</span><span class="o">.</span><span class="n">drawcoastlines</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
-    <span class="n">m</span><span class="o">.</span><span class="n">drawcountries</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-    <span class="n">m</span><span class="o">.</span><span class="n">drawstates</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawmapboundary</span><span class="p">(</span><span class="n">fill_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawcoastlines</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawcountries</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawstates</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+
 
     <span class="c1"># Draw parallels (latitude lines) and meridians (longitude lines)</span>
     <span class="n">parallels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">90.</span><span class="p">,</span> <span class="mf">91.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">)</span>
@@ -518,8 +522,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/347e6a7bb7e180f35149bb703c38eb1f91ced7c071ad09160504dfcabe3ae58c.png" src="../_images/347e6a7bb7e180f35149bb703c38eb1f91ced7c071ad09160504dfcabe3ae58c.png" />
-<img alt="../_images/af3cc3ab4c080b26fe5eccb6ccac7736358e869f199ec07825ba0d2f2e63f411.png" src="../_images/af3cc3ab4c080b26fe5eccb6ccac7736358e869f199ec07825ba0d2f2e63f411.png" />
+<img alt="../_images/e72042491fae9e597908e3c3ad210ccddcde4ef5e76bc00f49e4f6010315608a.png" src="../_images/e72042491fae9e597908e3c3ad210ccddcde4ef5e76bc00f49e4f6010315608a.png" />
+<img alt="../_images/72f120b3992fc28e52b5c7ae49d261669ff09563bc88338dab8d339d58086ee0.png" src="../_images/72f120b3992fc28e52b5c7ae49d261669ff09563bc88338dab8d339d58086ee0.png" />
 </div>
 </div>
 </section>

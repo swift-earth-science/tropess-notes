@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'brazilian-fires-gridded-plot-carbon-monoxide-column';</script>
     <link rel="index" title="Index" href="../genindex/" />
     <link rel="search" title="Search" href="../search/" />
-    <link rel="next" title="Canadian Fires (2023)" href="../canadian-fires/" />
-    <link rel="prev" title="Download Data" href="../brazilian-fires-download-data/" />
+    <link rel="next" title="Brazilian Fires - PeroxyAcetyl Nitrate (PAN) - CrIS JPSS-1" href="../brazilian-fires-gridded-plot-peroxyacetyl-nitrate-column/" />
+    <link rel="prev" title="Brazilian Fires - Ammonia (NH3) - CrIS JPSS-1" href="../brazilian-fires-gridded-plot-ammonia-column/" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,11 +181,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Significant Events</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Major Events</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../brazilian-fires/">Brazilian Fires (2022)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-download-data/">Download Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-ammonia-column/">Brazilian Fires - Ammonia (NH3) - CrIS JPSS-1</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Brazilian Fires - Carbon Monoxide (CO) - CrIS JPSS-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-peroxyacetyl-nitrate-column/">Brazilian Fires - PeroxyAcetyl Nitrate (PAN) - CrIS JPSS-1</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../canadian-fires/">Canadian Fires (2023)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -404,7 +406,7 @@ document.write(`
 <h1>Brazilian Fires - Carbon Monoxide (CO) - CrIS JPSS-1<a class="headerlink" href="#brazilian-fires-carbon-monoxide-co-cris-jpss-1" title="Permalink to this heading">#</a></h1>
 <section id="total-column-gridded-data-14km-x-14km-plots">
 <h2>Total Column - gridded data (14km x 14km) plots<a class="headerlink" href="#total-column-gridded-data-14km-x-14km-plots" title="Permalink to this heading">#</a></h2>
-<p>This code plots the Carbon Monoxide (CO) total column for each day from 01-Jun-2023 to 02-Jun-2023.</p>
+<p>This code plots the Carbon Monoxide (CO) total column for each day from 01-Aug-2022 to 31-Aug-2022.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
@@ -481,8 +483,9 @@ document.write(`
                 <span class="n">llcrnrlat</span><span class="o">=</span><span class="n">latitude_min</span><span class="p">,</span> <span class="n">urcrnrlat</span><span class="o">=</span><span class="n">latitude_max</span><span class="p">,</span>  <span class="c1"># set latitude limits to -56 and 24</span>
                 <span class="n">llcrnrlon</span><span class="o">=</span><span class="n">longitude_min</span><span class="p">,</span> <span class="n">urcrnrlon</span><span class="o">=</span><span class="n">longitude_max</span><span class="p">)</span>  <span class="c1"># set longitude limits to -96 and -30</span>
 
-    <span class="n">m</span><span class="o">.</span><span class="n">drawcoastlines</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
-    <span class="n">m</span><span class="o">.</span><span class="n">drawcountries</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawmapboundary</span><span class="p">(</span><span class="n">fill_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawcoastlines</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">drawcountries</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 
     <span class="c1"># Draw parallels (latitude lines) and meridians (longitude lines)</span>
     <span class="n">parallels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">90.</span><span class="p">,</span> <span class="mf">91.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">)</span>
@@ -601,20 +604,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../brazilian-fires-download-data/"
+       href="../brazilian-fires-gridded-plot-ammonia-column/"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Download Data</p>
+        <p class="prev-next-title">Brazilian Fires - Ammonia (NH3) - CrIS JPSS-1</p>
       </div>
     </a>
     <a class="right-next"
-       href="../canadian-fires/"
+       href="../brazilian-fires-gridded-plot-peroxyacetyl-nitrate-column/"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Canadian Fires (2023)</p>
+        <p class="prev-next-title">Brazilian Fires - PeroxyAcetyl Nitrate (PAN) - CrIS JPSS-1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

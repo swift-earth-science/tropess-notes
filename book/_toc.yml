@@ -27,6 +27,10 @@ parts:
       - file: quick-start-scatter-plot-methane-profile
   - caption: Significant Events
     chapters:
+    - file: brazilian-fires
+      sections:
+      - file: brazilian-fires-download-data
+      - file: brazilian-fires-gridded-plot-carbon-monoxide-column
     - file: canadian-fires
       sections:
       - file: canadian-fires-download-data

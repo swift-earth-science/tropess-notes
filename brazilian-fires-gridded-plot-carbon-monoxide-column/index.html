@@ -387,6 +387,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-column-gridded-data-14km-x-14km-plots">Total Column - gridded data (14km x 14km) plots</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-day">First day</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#timelapse">Timelapse</a></li>
 </ul>
             </nav>
         </div>
@@ -406,6 +408,8 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">contextlib</span>
+
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
@@ -418,6 +422,8 @@ document.write(`
 
 <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">griddata</span>
 <span class="kn">from</span> <span class="nn">scipy.spatial</span> <span class="kn">import</span> <span class="n">cKDTree</span>
+
+<span class="kn">import</span> <span class="nn">imageio.v2</span> <span class="k">as</span> <span class="nn">imageio</span>
 </pre></div>
 </div>
 </div>
@@ -425,8 +431,8 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Specify date range</span>
-<span class="n">start_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
-<span class="n">end_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
 
 <span class="c1"># Loop through the date range and plot Carbon Monoxide for each day</span>
 <span class="k">for</span> <span class="n">current_date</span> <span class="ow">in</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">):</span>
@@ -518,18 +524,48 @@ document.write(`
     <span class="n">title_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x_col</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;TROPESS - CrIS JPSS-1 - Carbon Monoxide Column (XCO) - </span><span class="si">{</span><span class="n">title_date</span><span class="si">}</span><span class="se">\n</span><span class="s1">Min: </span><span class="si">{</span><span class="n">title_min</span><span class="si">:</span><span class="s1">.01f</span><span class="si">}</span><span class="s1">, Max: </span><span class="si">{</span><span class="n">title_max</span><span class="si">:</span><span class="s1">.01f</span><span class="si">}</span><span class="s1"> ppbv&#39;</span><span class="p">)</span>
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="c1"># Save figure to PNG file</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;./images/TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_</span><span class="si">{</span><span class="n">title_date</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
 
     <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/93fdc461cf76ef548b303c74e91599bd9e9a157e8d1c913c63475846f8bad68a.png" src="../_images/93fdc461cf76ef548b303c74e91599bd9e9a157e8d1c913c63475846f8bad68a.png" />
-<img alt="../_images/ce92c84962baa7c631b3ecb3989000d5fa4e7a4731c3e8508cf432338e6db29b.png" src="../_images/ce92c84962baa7c631b3ecb3989000d5fa4e7a4731c3e8508cf432338e6db29b.png" />
-<img alt="../_images/d0908cd30069f84d3c7438d386c9b055eaad4c08912fc29e3e2d8d0dfa657dcf.png" src="../_images/d0908cd30069f84d3c7438d386c9b055eaad4c08912fc29e3e2d8d0dfa657dcf.png" />
+</div>
+<p>Now generate an animated GIF from the saved figures.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">timelapse_start_date</span> <span class="o">=</span> <span class="n">start_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%b-%Y&quot;</span><span class="p">)</span>
+<span class="n">timelapse_end_date</span> <span class="o">=</span> <span class="n">end_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%b-%Y&quot;</span><span class="p">)</span>
+<span class="n">timelapse_file</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;./images/TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_Timelapse_</span><span class="si">{</span><span class="n">timelapse_start_date</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">timelapse_end_date</span><span class="si">}</span><span class="s1">.gif&#39;</span>
+
+<span class="c1"># Path to the directory where the images were saved in the previous step</span>
+<span class="n">img_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;./images&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get all file names in the directory</span>
+<span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">([</span><span class="n">img</span> <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">img_dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_*.png&quot;</span><span class="p">)])</span>
+
+<span class="c1"># Read the images and add to a list</span>
+<span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">redirect_stdout</span><span class="p">(</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">images</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="n">images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">imageio</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+
+    <span class="c1"># Save the images as an animated gif</span>
+    <span class="c1"># duration is the time spent on each image (in milliseconds)</span>
+    <span class="n">imageio</span><span class="o">.</span><span class="n">mimsave</span><span class="p">(</span><span class="n">timelapse_file</span><span class="p">,</span> <span class="n">images</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">1000.0</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  
+</pre></div>
 </div>
 </div>
+</div>
+</section>
+<section id="first-day">
+<h2>First day<a class="headerlink" href="#first-day" title="Permalink to this heading">#</a></h2>
+<p><img alt="first-day" src="../_images/TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_01-Aug-2022.png" /></p>
+</section>
+<section id="timelapse">
+<h2>Timelapse<a class="headerlink" href="#timelapse" title="Permalink to this heading">#</a></h2>
+<p><img alt="timelapse" src="../_images/TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_Timelapse_01-Aug-2022_31-Aug-2022.gif" /></p>
 </section>
 </section>
 
@@ -601,6 +637,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-column-gridded-data-14km-x-14km-plots">Total Column - gridded data (14km x 14km) plots</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-day">First day</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#timelapse">Timelapse</a></li>
 </ul>
   </nav></div>
 

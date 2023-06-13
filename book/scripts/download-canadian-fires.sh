@@ -2,7 +2,7 @@
 
 # date range, the last day to download will `end_date - 1 day`
 start_date=2023-06-01
-end_date=2023-06-03
+end_date=2023-06-09
 
 # after this, start_date and end_date will be valid ISO 8601 dates,
 start_date=$(date -I -d "$start_date") || exit 1

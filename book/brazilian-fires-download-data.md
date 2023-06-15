@@ -7,7 +7,7 @@ Create a bash script file with the following contents and save it as `download-b
 ```bash
 #!/usr/bin/env bash
 
-# date range, the last day to download will `end_date - 1 day`
+# date range, the last downloaded day will be `end_date - 1 day`
 start_date=2022-08-01
 end_date=2022-09-01
 

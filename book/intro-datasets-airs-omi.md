@@ -1,6 +1,7 @@
 # AIRS + OMI | Forward Stream | Standard
 
-> These products are generated from collocated AIRS and OMI measurements
+These products are retrieved from collocated AIRS and OMI measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.
+
 
 ## AIRS Only
 

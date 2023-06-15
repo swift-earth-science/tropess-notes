@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Instruments &#8212; TROPESS Notes</title>
+    <title>CrIS SNPP | Forward Stream | Standard &#8212; TROPESS Notes</title>
   
   
   
@@ -61,11 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro-instruments';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro-datasets-cris-suomi-npp';</script>
     <link rel="index" title="Index" href="../genindex/" />
     <link rel="search" title="Search" href="../search/" />
-    <link rel="next" title="Collections" href="../intro-collections/" />
-    <link rel="prev" title="Welcome to TROPESS Notes" href="../" />
+    <link rel="next" title="Setup" href="../setup/" />
+    <link rel="prev" title="AIRS + OMI | Forward Stream | Standard" href="../intro-datasets-airs-omi/" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,12 +158,12 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Instruments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro-instruments/">Instruments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro-collections/">Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro-product-flavors/">Product Flavors</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../intro-datasets/">Datasets</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro-datasets/">Datasets</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro-datasets-airs-omi/">AIRS + OMI | Forward Stream | Standard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-cris-suomi-npp/">CrIS SNPP | Forward Stream | Standard</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">CrIS SNPP | Forward Stream | Standard</a></li>
 </ul>
 </li>
 </ul>
@@ -267,7 +267,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/swiftsoftwaregroup/tropess-notes/issues/new?title=Issue%20on%20page%20%2Fintro-instruments.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/swiftsoftwaregroup/tropess-notes/issues/new?title=Issue%20on%20page%20%2Fintro-datasets-cris-suomi-npp.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -297,7 +297,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/intro-instruments.md" target="_blank"
+      <li><a href="../_sources/intro-datasets-cris-suomi-npp.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -379,7 +379,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Instruments</h1>
+    <h1>CrIS SNPP | Forward Stream | Standard</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -389,10 +389,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airs">AIRS</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cris-suomi-npp">CrIS (Suomi NPP)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cris-jpss-1-noaa-20">CrIS (JPSS-1 / NOAA-20)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#omi">OMI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peroxyacetyl-nitrate-pan">Peroxyacetyl Nitrate (PAN)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
 </ul>
             </nav>
         </div>
@@ -404,32 +408,40 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="instruments">
-<h1>Instruments<a class="headerlink" href="#instruments" title="Permalink to this heading">#</a></h1>
-<p>The following instruments are supported by the TROPESS project currently.</p>
-<section id="airs">
-<h2>AIRS<a class="headerlink" href="#airs" title="Permalink to this heading">#</a></h2>
-<p>The Atmospheric Infra-Red Sounder (AIRS) instrument was launched into Earth orbit on May 4, 2002 aboard NASA’s Aqua satellite.</p>
-<p>The AIRS instrument is a hyper-spectral infrared atmospheric sounder. It measures a large number of wavelengths, over a two-dimensional field of view, in the infrared wavelengths.</p>
-<p>For more information see <a class="reference external" href="https://airs.jpl.nasa.gov/mission/airs-project-instrument-suite/airs/">Atmospheric Infra-Red Sounder (AIRS)</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="cris-snpp-forward-stream-standard">
+<h1>CrIS SNPP | Forward Stream | Standard<a class="headerlink" href="#cris-snpp-forward-stream-standard" title="Permalink to this heading">#</a></h1>
+<p>These products are retrieved from <a class="reference internal" href="../intro-instruments/"><span class="doc std std-doc">CrIS SNPP</span></a> measurements via the <a class="reference external" href="https://en.wikipedia.org/wiki/Optimal_estimation">Optimal estimation</a> method.</p>
+<section id="methane-ch4">
+<h2>Methane (CH4)<a class="headerlink" href="#methane-ch4" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of methane (CH4). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2CH4CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
 </section>
-<section id="cris-suomi-npp">
-<h2>CrIS (Suomi NPP)<a class="headerlink" href="#cris-suomi-npp" title="Permalink to this heading">#</a></h2>
-<p>The Cross-track Infrared Sounder (CrIS) instrument measures the infrared spectrum emitted from the top of the atmosphere.</p>
-<p>CrIS is one of the instruments currently flying on the Suomi National Polar-orbiting Partnership (Suomi NPP) satellite.</p>
-<p>For more information see <a class="reference external" href="https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared">Cross-track Infrared Sounder (CrIS)</a>.</p>
+<section id="carbon-monoxide-co">
+<h2>Carbon monoxide (CO)<a class="headerlink" href="#carbon-monoxide-co" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of carbon monoxide (CO). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2COCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
 </section>
-<section id="cris-jpss-1-noaa-20">
-<h2>CrIS (JPSS-1 / NOAA-20)<a class="headerlink" href="#cris-jpss-1-noaa-20" title="Permalink to this heading">#</a></h2>
-<p>The Cross-track Infrared Sounder (CrIS) instrument currently flying on the NOAA-20 / JPSS-1 satellite.</p>
-<p>The <a class="reference external" href="https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system">Joint Polar Satellite System (JPSS)</a> includes five satellites: NOAA/NASA Suomi National Polar-orbiting Partnership (Suomi NPP) satellite, NOAA-20, previously known as JPSS-1, NOAA-21, previously known as JPSS-2, and the upcoming JPSS-3 and JPSS-4 satellites.</p>
-<p>For more information see <a class="reference external" href="https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared">Cross-track Infrared Sounder (CrIS)</a>.</p>
+<section id="water-vapor-h2o">
+<h2>Water vapor (H2O)<a class="headerlink" href="#water-vapor-h2o" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of water vapor (H2O). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2H2OCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
 </section>
-<section id="omi">
-<h2>OMI<a class="headerlink" href="#omi" title="Permalink to this heading">#</a></h2>
-<p>The Ozone Monitoring Instrument (OMI) flies on the NASA’s Aura satellite, launched into Earth orbit on July 15, 2004.</p>
-<p>The OMI instrument is a nadir viewing imaging spectrograph that measures the solar radiation backscattered by the Earth’s atmosphere and surface over the entire wavelength range from 270 to 500 nm with a spectral resolution of about 0.5 nm.</p>
-<p>For more information see <a class="reference external" href="https://www.knmiprojects.nl/projects/ozone-monitoring-instrument">Ozone Monitoring Instrument (OMI)</a></p>
+<section id="semi-heavy-water-vapor-hdo">
+<h2>Semi-heavy water vapor (HDO)<a class="headerlink" href="#semi-heavy-water-vapor-hdo" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of semi-heavy water vapor (HDO). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2HDOCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="ammonia-nh3">
+<h2>Ammonia (NH3)<a class="headerlink" href="#ammonia-nh3" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of ammonia (NH3). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2NH3CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="ozone-o3">
+<h2>Ozone (O3)<a class="headerlink" href="#ozone-o3" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of ozone (O3). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2O3CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="peroxyacetyl-nitrate-pan">
+<h2>Peroxyacetyl Nitrate (PAN)<a class="headerlink" href="#peroxyacetyl-nitrate-pan" title="Permalink to this heading">#</a></h2>
+<p>Vertical distribution of peroxyacetyl nitrate (PAN). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2PANCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="air-temperature-tatm">
+<h2>Air temperature (TATM)<a class="headerlink" href="#air-temperature-tatm" title="Permalink to this heading">#</a></h2>
+<p>Air temperature (TATM) at different pressure levels / altitudes. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2TATMCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
 </section>
 </section>
 
@@ -465,20 +477,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../"
+       href="../intro-datasets-airs-omi/"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to TROPESS Notes</p>
+        <p class="prev-next-title">AIRS + OMI | Forward Stream | Standard</p>
       </div>
     </a>
     <a class="right-next"
-       href="../intro-collections/"
+       href="../setup/"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Collections</p>
+        <p class="prev-next-title">Setup</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -500,10 +512,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airs">AIRS</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cris-suomi-npp">CrIS (Suomi NPP)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cris-jpss-1-noaa-20">CrIS (JPSS-1 / NOAA-20)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#omi">OMI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peroxyacetyl-nitrate-pan">Peroxyacetyl Nitrate (PAN)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
 </ul>
   </nav></div>
 

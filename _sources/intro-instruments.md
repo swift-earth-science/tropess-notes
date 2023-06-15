@@ -10,6 +10,22 @@ The AIRS instrument is a hyper-spectral infrared atmospheric sounder. It measure
 
 For more information see [Atmospheric Infra-Red Sounder (AIRS)](https://airs.jpl.nasa.gov/mission/airs-project-instrument-suite/airs/).
 
+## CrIS (Suomi NPP)
+
+The Cross-track Infrared Sounder (CrIS) instrument measures the infrared spectrum emitted from the top of the atmosphere. 
+
+CrIS is one of the instruments currently flying on the Suomi National Polar-orbiting Partnership (Suomi NPP) satellite.
+
+For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared).
+
+## CrIS (JPSS-1 / NOAA-20)
+
+The Cross-track Infrared Sounder (CrIS) instrument currently flying on the NOAA-20 / JPSS-1 satellite. 
+
+The [Joint Polar Satellite System (JPSS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system) includes five satellites: NOAA/NASA Suomi National Polar-orbiting Partnership (Suomi NPP) satellite, NOAA-20, previously known as JPSS-1, NOAA-21, previously known as JPSS-2, and the upcoming JPSS-3 and JPSS-4 satellites. 
+
+For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared).
+
 ## OMI
 
 The Ozone Monitoring Instrument (OMI) flies on the NASA's Aura satellite, launched into Earth orbit on July 15, 2004.

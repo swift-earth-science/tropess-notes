@@ -4,7 +4,7 @@ The following instruments are supported by the TROPESS project currently.
 
 ## AIRS
 
-> Launched May 4th, 2002
+> Launched May 4, 2002
 
 The Atmospheric Infra-Red Sounder (AIRS) instrument was launched into Earth orbit on May 4, 2002 aboard NASA's Aqua satellite. 
 
@@ -14,7 +14,7 @@ For more information see [Atmospheric Infra-Red Sounder (AIRS)](https://airs.jpl
 
 ## CrIS (Suomi NPP)
 
-> Launched October 28th, 2011
+> Launched October 28, 2011
 
 The Cross-track Infrared Sounder (CrIS) is one of the instruments currently flying on the [Suomi National Polar-orbiting Partnership (Suomi NPP)](https://en.wikipedia.org/wiki/Suomi_NPP) satellite which was launched on October 28, 2011. CrIS measures the infrared spectrum emitted from the top of the atmosphere. It is functionally similar to AIRS.
 
@@ -22,7 +22,7 @@ For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdi
 
 ## CrIS (JPSS-1 / NOAA-20)
 
-> Launched November 18th, 2017
+> Launched November 18, 2017
 
 This is a second instance of the Cross-track Infrared Sounder (CrIS) instrument launched aboard [NOAA-20 / JPSS-1](https://en.wikipedia.org/wiki/NOAA-20) satellite. NOAA-20 was launched on November 18, 2017.
 
@@ -32,7 +32,7 @@ For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdi
 
 ## OMI
 
-> Launched July 15th, 2004
+> Launched July 15, 2004
 
 The Ozone Monitoring Instrument (OMI) flies on the NASA's Aura satellite, launched into Earth orbit on July 15, 2004.
 

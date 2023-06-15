@@ -32,6 +32,8 @@ For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdi
 
 ## OMI
 
+> Launched July 15th, 2004
+
 The Ozone Monitoring Instrument (OMI) flies on the NASA's Aura satellite, launched into Earth orbit on July 15, 2004.
 
 The OMI instrument is a nadir viewing imaging spectrograph that measures the solar radiation backscattered by the Earth's atmosphere and surface over the entire wavelength range from 270 to 500 nm with a spectral resolution of about 0.5 nm. 

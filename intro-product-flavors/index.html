@@ -162,8 +162,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intro-collections/">Collections</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Product Flavors</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../intro-datasets/">Datasets</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-airs-omi/">AIRS + OMI | Forward Stream | Standard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-cris-suomi-npp/">CrIS SNPP | Forward Stream | Standard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-airs-omi/">AIRS + OMI | Forward Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-cris-suomi-npp/">CrIS SNPP | Forward Stream</a></li>
 </ul>
 </li>
 </ul>
@@ -389,6 +389,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard">Standard</a></li>
 </ul>
             </nav>
@@ -403,10 +404,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="product-flavors">
 <h1>Product Flavors<a class="headerlink" href="#product-flavors" title="Permalink to this heading">#</a></h1>
-<p>The TROPESS data products come in two different flavors: Standard and Summary</p>
+<p>The TROPESS data products come in two different flavors: Summary and Standard</p>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>The TROPESS Summary products contain vertical column densities of trace gases, as well as vertical column uncertainties. It is good for quick access, browsing, and quick visualizations.</p>
+</section>
 <section id="standard">
 <h2>Standard<a class="headerlink" href="#standard" title="Permalink to this heading">#</a></h2>
-<p>The TROPESS Standard Product contains vertical distribution of trace gases, as well as formal uncertainties, and diagnostic information. It is good for analysing trace gas concentrations at specific atmospheric pressures / altitudes.</p>
+<p>The TROPESS Standard products contain vertical distribution of trace gases, as well as formal uncertainties, and diagnostic information. It is good for analyzing trace gas concentrations at specific atmospheric pressures / altitudes.</p>
 </section>
 </section>
 
@@ -477,6 +482,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard">Standard</a></li>
 </ul>
   </nav></div>

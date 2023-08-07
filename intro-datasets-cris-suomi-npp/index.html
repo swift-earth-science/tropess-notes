@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>CrIS SNPP | Forward Stream | Standard &#8212; TROPESS Notes</title>
+    <title>CrIS SNPP | Forward Stream &#8212; TROPESS Notes</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex/" />
     <link rel="search" title="Search" href="../search/" />
     <link rel="next" title="Setup" href="../setup/" />
-    <link rel="prev" title="AIRS + OMI | Forward Stream | Standard" href="../intro-datasets-airs-omi/" />
+    <link rel="prev" title="AIRS + OMI | Forward Stream" href="../intro-datasets-airs-omi/" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -162,8 +162,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intro-collections/">Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro-product-flavors/">Product Flavors</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro-datasets/">Datasets</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-airs-omi/">AIRS + OMI | Forward Stream | Standard</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">CrIS SNPP | Forward Stream | Standard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro-datasets-airs-omi/">AIRS + OMI | Forward Stream</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">CrIS SNPP | Forward Stream</a></li>
 </ul>
 </li>
 </ul>
@@ -379,7 +379,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CrIS SNPP | Forward Stream | Standard</h1>
+    <h1>CrIS SNPP | Forward Stream</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -389,14 +389,25 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peroxyacetyl-nitrate-pan">Peroxyacetyl Nitrate (PAN)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-products">Summary Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peroxyacetyl-nitrate-pan">Peroxyacetyl Nitrate (PAN)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-products">Standard Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ammonia (NH3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Carbon monoxide (CO)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Methane (CH4)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Peroxyacetyl Nitrate (PAN)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -408,40 +419,66 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="cris-snpp-forward-stream-standard">
-<h1>CrIS SNPP | Forward Stream | Standard<a class="headerlink" href="#cris-snpp-forward-stream-standard" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="cris-snpp-forward-stream">
+<h1>CrIS SNPP | Forward Stream<a class="headerlink" href="#cris-snpp-forward-stream" title="Permalink to this heading">#</a></h1>
 <p>These products are retrieved from <a class="reference internal" href="../intro-instruments/"><span class="doc std std-doc">CrIS SNPP</span></a> measurements via the <a class="reference external" href="https://en.wikipedia.org/wiki/Optimal_estimation">Optimal estimation</a> method.</p>
-<section id="methane-ch4">
-<h2>Methane (CH4)<a class="headerlink" href="#methane-ch4" title="Permalink to this heading">#</a></h2>
-<p>Vertical distribution of methane (CH4). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2CH4CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+<section id="summary-products">
+<h2>Summary Products<a class="headerlink" href="#summary-products" title="Permalink to this heading">#</a></h2>
+<section id="ammonia-nh3">
+<h3>Ammonia (NH3)<a class="headerlink" href="#ammonia-nh3" title="Permalink to this heading">#</a></h3>
+<p>Vertically integrated ammonia total column. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2NH3CRSFS_1/summary?keywords=tropess">GES DISC</a></p>
 </section>
 <section id="carbon-monoxide-co">
-<h2>Carbon monoxide (CO)<a class="headerlink" href="#carbon-monoxide-co" title="Permalink to this heading">#</a></h2>
-<p>Vertical distribution of carbon monoxide (CO). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2COCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+<h3>Carbon monoxide (CO)<a class="headerlink" href="#carbon-monoxide-co" title="Permalink to this heading">#</a></h3>
+<p>Column-averaged dry air mixing ratio of carbon monoxide from the surface to the Top of the Atmosphere (TOA), also known as XCO. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2COCRSFS_1/summary?keywords=tropess">GES DISC</a></p>
 </section>
-<section id="water-vapor-h2o">
-<h2>Water vapor (H2O)<a class="headerlink" href="#water-vapor-h2o" title="Permalink to this heading">#</a></h2>
-<p>Vertical distribution of water vapor (H2O). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2H2OCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
-</section>
-<section id="semi-heavy-water-vapor-hdo">
-<h2>Semi-heavy water vapor (HDO)<a class="headerlink" href="#semi-heavy-water-vapor-hdo" title="Permalink to this heading">#</a></h2>
-<p>Vertical distribution of semi-heavy water vapor (HDO). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2HDOCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
-</section>
-<section id="ammonia-nh3">
-<h2>Ammonia (NH3)<a class="headerlink" href="#ammonia-nh3" title="Permalink to this heading">#</a></h2>
-<p>Vertical distribution of ammonia (NH3). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2NH3CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+<section id="methane-ch4">
+<h3>Methane (CH4)<a class="headerlink" href="#methane-ch4" title="Permalink to this heading">#</a></h3>
+<p>Column-averaged dry air mixing ratio of methane for the partial column between 826 hPa and the Top of the Atmosphere (TOA), also known as free tropospheric XCH4. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2CH4CRSFS_1/summary?keywords=tropess">GES DISC</a></p>
 </section>
 <section id="ozone-o3">
-<h2>Ozone (O3)<a class="headerlink" href="#ozone-o3" title="Permalink to this heading">#</a></h2>
-<p>Vertical distribution of ozone (O3). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2O3CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+<h3>Ozone (O3)<a class="headerlink" href="#ozone-o3" title="Permalink to this heading">#</a></h3>
+<p>Vertically integrated ozone total and tropospheric columns. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2O3CRSFS_1/summary?keywords=tropess">GES DISC</a></p>
 </section>
 <section id="peroxyacetyl-nitrate-pan">
-<h2>Peroxyacetyl Nitrate (PAN)<a class="headerlink" href="#peroxyacetyl-nitrate-pan" title="Permalink to this heading">#</a></h2>
+<h3>Peroxyacetyl Nitrate (PAN)<a class="headerlink" href="#peroxyacetyl-nitrate-pan" title="Permalink to this heading">#</a></h3>
+<p>Column-averaged dry air mixing ratio of peroxyacetyl nitrate for the partial column between 826 hPa and 215 hPa, also known as free tropospheric XPAN. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2PANCRSFS_1/summary?keywords=tropess">GES DISC</a></p>
+</section>
+</section>
+<section id="standard-products">
+<h2>Standard Products<a class="headerlink" href="#standard-products" title="Permalink to this heading">#</a></h2>
+<section id="air-temperature-tatm">
+<h3>Air temperature (TATM)<a class="headerlink" href="#air-temperature-tatm" title="Permalink to this heading">#</a></h3>
+<p>Air temperature (TATM) at different pressure levels / altitudes. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2TATMCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="id1">
+<h3>Ammonia (NH3)<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Vertical distribution of ammonia (NH3). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2NH3CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="id2">
+<h3>Carbon monoxide (CO)<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Vertical distribution of carbon monoxide (CO). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2COCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="id3">
+<h3>Methane (CH4)<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Vertical distribution of methane (CH4). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2CH4CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="id4">
+<h3>Ozone (O3)<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>Vertical distribution of ozone (O3). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2O3CRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="id5">
+<h3>Peroxyacetyl Nitrate (PAN)<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
 <p>Vertical distribution of peroxyacetyl nitrate (PAN). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2PANCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
 </section>
-<section id="air-temperature-tatm">
-<h2>Air temperature (TATM)<a class="headerlink" href="#air-temperature-tatm" title="Permalink to this heading">#</a></h2>
-<p>Air temperature (TATM) at different pressure levels / altitudes. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2TATMCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+<section id="semi-heavy-water-vapor-hdo">
+<h3>Semi-heavy water vapor (HDO)<a class="headerlink" href="#semi-heavy-water-vapor-hdo" title="Permalink to this heading">#</a></h3>
+<p>Vertical distribution of semi-heavy water vapor (HDO). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2HDOCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
+<section id="water-vapor-h2o">
+<h3>Water vapor (H2O)<a class="headerlink" href="#water-vapor-h2o" title="Permalink to this heading">#</a></h3>
+<p>Vertical distribution of water vapor (H2O). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2H2OCRSFS_1/summary?keywords=tropess">GES DISC</a>.</p>
+</section>
 </section>
 </section>
 
@@ -482,7 +519,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">AIRS + OMI | Forward Stream | Standard</p>
+        <p class="prev-next-title">AIRS + OMI | Forward Stream</p>
       </div>
     </a>
     <a class="right-next"
@@ -512,14 +549,25 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peroxyacetyl-nitrate-pan">Peroxyacetyl Nitrate (PAN)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-products">Summary Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peroxyacetyl-nitrate-pan">Peroxyacetyl Nitrate (PAN)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-products">Standard Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ammonia (NH3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Carbon monoxide (CO)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Methane (CH4)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Peroxyacetyl Nitrate (PAN)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

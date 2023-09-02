@@ -22,12 +22,6 @@ Install [Homebrew](https://brew.sh/):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## wget, curl
-
-```bash
-brew install wget curl
-```
-
 ## bash 5
 
 ```bash
@@ -38,6 +32,18 @@ brew install bash
 
 ```bash
 brew install git
+```
+
+## wget, curl
+
+```bash
+brew install wget curl
+```
+
+## cairo, geos
+
+```bash
+brew install cairo geos
 ```
 
 ## Development Tools

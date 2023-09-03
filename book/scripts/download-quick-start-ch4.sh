@@ -1,24 +1,5 @@
-# Download Data
+#!/usr/bin/env bash
 
-## Browse products
-
-Browse TROPESS products:
-
-```bash
-open https://disc.gsfc.nasa.gov/datasets?keywords=tropess
-```
-
-We will be using CrIS JPSS-1 Methane forward stream. To see all the available data for CrIS JPSS-1 Methane (CH4) go to the CrIS JPSS-1 Online Archive for CH4:
-
-```bash
-open https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2CH4CRS1FS.1
-```
-
-## Download some sample data
-
-Download the TROPESS Summary Methane (CH4) product for May 16, 2023:
-
-```bash
 pushd ./data
 
 # download the data files
@@ -54,4 +35,3 @@ wget --load-cookies ~/.urs_cookies --save-cookies ~/.urs_cookies \
 https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Standard/TRPSDL2CH4CRS1FS.1/doc/$readme
 
 popd     
-```

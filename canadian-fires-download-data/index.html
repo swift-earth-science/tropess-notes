@@ -402,8 +402,8 @@ document.write(`
 <span class="nv">end_date</span><span class="o">=</span><span class="m">2023</span>-06-09
 
 <span class="c1"># after this, start_date and end_date will be valid ISO 8601 dates,</span>
-<span class="nv">start_date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>-I<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$start_date</span><span class="s2">&quot;</span><span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<span class="nv">end_date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>-I<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$end_date</span><span class="s2">&quot;</span><span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">start_date</span><span class="o">=</span><span class="k">$(</span>gdate<span class="w"> </span>-I<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$start_date</span><span class="s2">&quot;</span><span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">end_date</span><span class="o">=</span><span class="k">$(</span>gdate<span class="w"> </span>-I<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$end_date</span><span class="s2">&quot;</span><span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
 
 <span class="nb">pushd</span><span class="w"> </span>./data
 
@@ -411,15 +411,15 @@ document.write(`
 <span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2">&quot;</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$end_date</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span>Downloading<span class="w"> </span><span class="nv">$current_date</span>
 
-<span class="w">    </span><span class="nv">file_date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2">&quot;</span><span class="w"> </span>+<span class="s2">&quot;%Y%m%d&quot;</span><span class="k">)</span>
+<span class="w">    </span><span class="nv">file_date</span><span class="o">=</span><span class="k">$(</span>gdate<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2">&quot;</span><span class="w"> </span>+<span class="s2">&quot;%Y%m%d&quot;</span><span class="k">)</span>
 <span class="w">    </span><span class="nv">data_file</span><span class="o">=</span><span class="s2">&quot;TROPESS_CrIS-JPSS1_L2_Summary_CO_</span><span class="si">${</span><span class="nv">file_date</span><span class="si">}</span><span class="s2">_MUSES_R1p20_FS_F0p6.nc&quot;</span>
 
 <span class="w">    </span>wget<span class="w"> </span>--load-cookies<span class="w"> </span>~/.urs_cookies<span class="w"> </span>--save-cookies<span class="w"> </span>~/.urs_cookies<span class="w"> </span><span class="se">\</span>
-<span class="w">         </span>--auth-no-challenge<span class="o">=</span>on<span class="w"> </span>--keep-session-cookies<span class="w"> </span>--content-disposition<span class="w"> </span><span class="se">\</span>
+<span class="w">         </span>--auth-no-challenge<span class="o">=</span>on<span class="w"> </span>--keep-session-cookies<span class="w"> </span>--content-disposition<span class="w"> </span>--continue<span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1/2023/<span class="nv">$data_file</span>
 
 <span class="w">    </span><span class="c1"># advance to next date</span>
-<span class="w">    </span><span class="nv">current_date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>-I<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2"> + 1 day&quot;</span><span class="k">)</span>
+<span class="w">    </span><span class="nv">current_date</span><span class="o">=</span><span class="k">$(</span>gdate<span class="w"> </span>-I<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2"> + 1 day&quot;</span><span class="k">)</span>
 <span class="k">done</span>
 
 <span class="nb">popd</span>

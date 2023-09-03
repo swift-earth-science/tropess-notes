@@ -1,0 +1,71 @@
+Traceback (most recent call last):
+  File "/Users/valentin/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/valentin/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/valentin/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/valentin/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/Users/valentin/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/valentin/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+timelapse_start_date = start_date.strftime("%d-%b-%Y")
+timelapse_end_date = end_date.strftime("%d-%b-%Y")
+timelapse_file = f'./images/TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_Timelapse_{timelapse_start_date}_{timelapse_end_date}.gif'
+
+# Path to the directory where the images were saved in the previous step
+img_dir = Path('./images')
+
+# Get all file names in the directory
+files = sorted([img for img in img_dir.glob("TROPESS_Brazilian-Fires_CrIS-JPSS-1_XCO_*.png")])
+
+# Read the images and add to a list
+with contextlib.redirect_stdout(None):
+    images = []
+    for filename in files:
+        images.append(imageio.imread(filename))
+
+    # Save the images as an animated gif
+    # duration is the time spent on each image (in milliseconds)
+    imageio.mimsave(timelapse_file, images, duration=1000.0, loop=0)  
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mValueError[0m                                Traceback (most recent call last)
+Cell [0;32mIn[3], line 19[0m
+[1;32m     15[0m     images[38;5;241m.[39mappend(imageio[38;5;241m.[39mimread(filename))
+[1;32m     17[0m [38;5;66;03m# Save the images as an animated gif[39;00m
+[1;32m     18[0m [38;5;66;03m# duration is the time spent on each image (in milliseconds)[39;00m
+[0;32m---> 19[0m [43mimageio[49m[38;5;241;43m.[39;49m[43mmimsave[49m[43m([49m[43mtimelapse_file[49m[43m,[49m[43m [49m[43mimages[49m[43m,[49m[43m [49m[43mduration[49m[38;5;241;43m=[39;49m[38;5;241;43m1000.0[39;49m[43m,[49m[43m [49m[43mloop[49m[38;5;241;43m=[39;49m[38;5;241;43m0[39;49m[43m)[49m  
+
+File [0;32m~/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/imageio/v2.py:495[0m, in [0;36mmimwrite[0;34m(uri, ims, format, **kwargs)[0m
+[1;32m    493[0m imopen_args[[38;5;124m"[39m[38;5;124mlegacy_mode[39m[38;5;124m"[39m] [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[1;32m    494[0m [38;5;28;01mwith[39;00m imopen(uri, [38;5;124m"[39m[38;5;124mwI[39m[38;5;124m"[39m, [38;5;241m*[39m[38;5;241m*[39mimopen_args) [38;5;28;01mas[39;00m file:
+[0;32m--> 495[0m     [38;5;28;01mreturn[39;00m [43mfile[49m[38;5;241;43m.[39;49m[43mwrite[49m[43m([49m[43mims[49m[43m,[49m[43m [49m[43mis_batch[49m[38;5;241;43m=[39;49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/imageio/plugins/pillow.py:389[0m, in [0;36mPillowPlugin.write[0;34m(self, ndimage, mode, format, is_batch, **kwargs)[0m
+[1;32m    383[0m     [38;5;28;01mraise[39;00m [38;5;167;01mTypeError[39;00m(
+[1;32m    384[0m         [38;5;124m"[39m[38;5;124mThe keyword `fps` is no longer supported. Use `duration`[39m[38;5;124m"[39m
+[1;32m    385[0m         [38;5;124m"[39m[38;5;124m(in ms) instead, e.g. `fps=50` == `duration=20` (1000 * 1/50).[39m[38;5;124m"[39m
+[1;32m    386[0m     )
+[1;32m    388[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(ndimage, [38;5;28mlist[39m):
+[0;32m--> 389[0m     ndimage [38;5;241m=[39m [43mnp[49m[38;5;241;43m.[39;49m[43mstack[49m[43m([49m[43mndimage[49m[43m,[49m[43m [49m[43maxis[49m[38;5;241;43m=[39;49m[38;5;241;43m0[39;49m[43m)[49m
+[1;32m    390[0m     is_batch [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[1;32m    391[0m [38;5;28;01melse[39;00m:
+
+File [0;32m~/Work/Git/Swift/tropess-notes/.venv/lib/python3.9/site-packages/numpy/core/shape_base.py:445[0m, in [0;36mstack[0;34m(arrays, axis, out, dtype, casting)[0m
+[1;32m    443[0m arrays [38;5;241m=[39m [asanyarray(arr) [38;5;28;01mfor[39;00m arr [38;5;129;01min[39;00m arrays]
+[1;32m    444[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m arrays:
+[0;32m--> 445[0m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([38;5;124m'[39m[38;5;124mneed at least one array to stack[39m[38;5;124m'[39m)
+[1;32m    447[0m shapes [38;5;241m=[39m {arr[38;5;241m.[39mshape [38;5;28;01mfor[39;00m arr [38;5;129;01min[39;00m arrays}
+[1;32m    448[0m [38;5;28;01mif[39;00m [38;5;28mlen[39m(shapes) [38;5;241m!=[39m [38;5;241m1[39m:
+
+[0;31mValueError[0m: need at least one array to stack
+

@@ -34,10 +34,10 @@ brew install bash
 brew install git
 ```
 
-## wget, curl
+## coreutils, wget, curl
 
 ```bash
-brew install wget curl
+brew install coreutils wget curl 
 ```
 
 ## cairo, geos

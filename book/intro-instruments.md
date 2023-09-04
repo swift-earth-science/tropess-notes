@@ -26,7 +26,7 @@ For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdi
 
 This is a second instance of the Cross-track Infrared Sounder (CrIS) instrument launched aboard [NOAA-20 / JPSS-1](https://en.wikipedia.org/wiki/NOAA-20) satellite. NOAA-20 was launched on November 18, 2017.
 
-The [Joint Polar Satellite System (JPSS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system) includes five satellites: NOAA/NASA Suomi National Polar-orbiting Partnership (Suomi NPP) satellite, NOAA-20, previously known as JPSS-1, NOAA-21, previously known as JPSS-2, and the upcoming JPSS-3 and JPSS-4 satellites. 
+The [Joint Polar Satellite System (JPSS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system) includes five satellites: NOAA/NASA Suomi National Polar-orbiting Partnership (Suomi NPP) satellite, NOAA-20 (JPSS-1), NOAA-21 (JPSS-2), and the upcoming JPSS-3 and JPSS-4 satellites. 
 
 For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared).
 

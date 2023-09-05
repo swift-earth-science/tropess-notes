@@ -12,14 +12,6 @@ The AIRS instrument is a hyper-spectral infrared atmospheric sounder. It measure
 
 For more information see [Atmospheric Infra-Red Sounder (AIRS)](https://airs.jpl.nasa.gov/mission/airs-project-instrument-suite/airs/).
 
-## CrIS (Suomi NPP)
-
-> Launched October 28, 2011
-
-The Cross-track Infrared Sounder (CrIS) is one of the instruments currently flying on the [Suomi National Polar-orbiting Partnership (Suomi NPP)](https://en.wikipedia.org/wiki/Suomi_NPP) satellite which was launched on October 28, 2011. CrIS measures the infrared spectrum emitted from the top of the atmosphere. It is functionally similar to AIRS.
-
-For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared).
-
 ## CrIS (JPSS-1 / NOAA-20)
 
 > Launched November 18, 2017
@@ -27,6 +19,14 @@ For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdi
 This is a second instance of the Cross-track Infrared Sounder (CrIS) instrument launched aboard [NOAA-20 / JPSS-1](https://en.wikipedia.org/wiki/NOAA-20) satellite. NOAA-20 was launched on November 18, 2017.
 
 The [Joint Polar Satellite System (JPSS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system) includes five satellites: NOAA/NASA Suomi National Polar-orbiting Partnership (Suomi NPP) satellite, NOAA-20 (JPSS-1), NOAA-21 (JPSS-2), and the upcoming JPSS-3 and JPSS-4 satellites. 
+
+For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared).
+
+## CrIS (Suomi NPP)
+
+> Launched October 28, 2011
+
+The Cross-track Infrared Sounder (CrIS) is one of the instruments currently flying on the [Suomi National Polar-orbiting Partnership (Suomi NPP)](https://en.wikipedia.org/wiki/Suomi_NPP) satellite which was launched on October 28, 2011. CrIS measures the infrared spectrum emitted from the top of the atmosphere. It is functionally similar to AIRS.
 
 For more information see [Cross-track Infrared Sounder (CrIS)](https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/cross-track-infrared).
 

@@ -390,23 +390,42 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-products">Standard Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-products">Summary Products</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#airs-only">AIRS Only</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3-airs">Ozone (O3) - AIRS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo-delta-d">Semi-heavy water vapor (HDO / Delta-D)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omi-only">OMI Only</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3-omi">Ozone (O3) - OMI</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#airs-omi-joint">AIRS + OMI Joint</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3-airs-omi">Ozone (O3) - AIRS+OMI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-products">Standard Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">AIRS Only</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ammonia (NH3)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Carbon monoxide (CO)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Methane (CH4)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ozone (O3) - AIRS</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omi-only">OMI Only</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">OMI Only</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Ozone (O3) - OMI</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#airs-omi-joint">AIRS + OMI Joint</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AIRS + OMI Joint</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Ozone (O3) - AIRS+OMI</a></li>
 </ul>
 </li>
 </ul>
@@ -425,28 +444,68 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="airs-omi-forward-stream">
 <h1>AIRS + OMI | Forward Stream<a class="headerlink" href="#airs-omi-forward-stream" title="Permalink to this heading">#</a></h1>
 <p>These products are retrieved from collocated AIRS and OMI measurements via the <a class="reference external" href="https://en.wikipedia.org/wiki/Optimal_estimation">Optimal estimation</a> method.</p>
-<section id="standard-products">
-<h2>Standard Products<a class="headerlink" href="#standard-products" title="Permalink to this heading">#</a></h2>
+<section id="summary-products">
+<h2>Summary Products<a class="headerlink" href="#summary-products" title="Permalink to this heading">#</a></h2>
 <section id="airs-only">
 <h3>AIRS Only<a class="headerlink" href="#airs-only" title="Permalink to this heading">#</a></h3>
+<section id="ammonia-nh3">
+<h4>Ammonia (NH3)<a class="headerlink" href="#ammonia-nh3" title="Permalink to this heading">#</a></h4>
+<p>Vertically integrated ammonia total column. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2NH3AIRSFS_1/summary">GES DISC</a></p>
+</section>
+<section id="carbon-monoxide-co">
+<h4>Carbon monoxide (CO)<a class="headerlink" href="#carbon-monoxide-co" title="Permalink to this heading">#</a></h4>
+<p>Column-averaged dry air mixing ratio of carbon monoxide from the surface to the Top of the Atmosphere (TOA), also known as XCO. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2COAIRSFS_1/summary">GES DISC</a></p>
+</section>
+<section id="methane-ch4">
+<h4>Methane (CH4)<a class="headerlink" href="#methane-ch4" title="Permalink to this heading">#</a></h4>
+<p>Column-averaged dry air mixing ratio of methane for the partial column between 826 hPa and the Top of the Atmosphere (TOA), also known as free tropospheric XCH4. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2CH4AIRSFS_1/summary">GES DISC</a></p>
+</section>
+<section id="ozone-o3-airs">
+<h4>Ozone (O3) - AIRS<a class="headerlink" href="#ozone-o3-airs" title="Permalink to this heading">#</a></h4>
+<p>Vertically integrated ozone total and tropospheric columns. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2O3AIRSFS_1/summary">GES DISC</a></p>
+</section>
+<section id="semi-heavy-water-vapor-hdo-delta-d">
+<h4>Semi-heavy water vapor (HDO / Delta-D)<a class="headerlink" href="#semi-heavy-water-vapor-hdo-delta-d" title="Permalink to this heading">#</a></h4>
+<p>Averaged deuterated water vapor content for the partial column between 850 and 250 hPa, expressed in parts per thousand relative to the deuterium content of ocean waters (also known as Delta-D). Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2HDOAIRSFS_1/summary">GES DISC</a></p>
+</section>
+</section>
+<section id="omi-only">
+<h3>OMI Only<a class="headerlink" href="#omi-only" title="Permalink to this heading">#</a></h3>
+<section id="ozone-o3-omi">
+<h4>Ozone (O3) - OMI<a class="headerlink" href="#ozone-o3-omi" title="Permalink to this heading">#</a></h4>
+<p>Vertically integrated ozone total and tropospheric columns. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2O3OMIFS_1/summary">GES DISC</a></p>
+</section>
+</section>
+<section id="airs-omi-joint">
+<h3>AIRS + OMI Joint<a class="headerlink" href="#airs-omi-joint" title="Permalink to this heading">#</a></h3>
+<section id="ozone-o3-airs-omi">
+<h4>Ozone (O3) - AIRS+OMI<a class="headerlink" href="#ozone-o3-airs-omi" title="Permalink to this heading">#</a></h4>
+<p>Vertically integrated ozone total and tropospheric columns. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSYL2O3AIRSOMIFS_1/summary">GES DISC</a></p>
+</section>
+</section>
+</section>
+<section id="standard-products">
+<h2>Standard Products<a class="headerlink" href="#standard-products" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h3>AIRS Only<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <section id="air-temperature-tatm">
 <h4>Air temperature (TATM)<a class="headerlink" href="#air-temperature-tatm" title="Permalink to this heading">#</a></h4>
 <p>Air temperature (TATM) at different pressure levels / altitudes, retrieved from AIRS measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2TATMAIRSFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
-<section id="ammonia-nh3">
-<h4>Ammonia (NH3)<a class="headerlink" href="#ammonia-nh3" title="Permalink to this heading">#</a></h4>
+<section id="id2">
+<h4>Ammonia (NH3)<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
 <p>Vertical distribution of ammonia (NH3), retrieved from AIRS measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2NH3AIRSFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
-<section id="carbon-monoxide-co">
-<h4>Carbon monoxide (CO)<a class="headerlink" href="#carbon-monoxide-co" title="Permalink to this heading">#</a></h4>
+<section id="id3">
+<h4>Carbon monoxide (CO)<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
 <p>Vertical distribution of carbon monoxide (CO), retrieved from AIRS measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2COAIRSFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
-<section id="methane-ch4">
-<h4>Methane (CH4)<a class="headerlink" href="#methane-ch4" title="Permalink to this heading">#</a></h4>
+<section id="id4">
+<h4>Methane (CH4)<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
 <p>Vertical distribution of methane (CH4), retrieved from AIRS measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2CH4AIRSFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
-<section id="ozone-o3">
-<h4>Ozone (O3)<a class="headerlink" href="#ozone-o3" title="Permalink to this heading">#</a></h4>
+<section id="id5">
+<h4>Ozone (O3) - AIRS<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
 <p>Vertical distribution of ozone (O3), retrieved from AIRS measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2O3AIRSFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
 <section id="semi-heavy-water-vapor-hdo">
@@ -458,17 +517,17 @@ document.write(`
 <p>Vertical distribution of water vapor (H2O), retrieved from AIRS measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2H2OAIRSFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
 </section>
-<section id="omi-only">
-<h3>OMI Only<a class="headerlink" href="#omi-only" title="Permalink to this heading">#</a></h3>
-<section id="id1">
-<h4>Ozone (O3)<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<section id="id6">
+<h3>OMI Only<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<section id="id7">
+<h4>Ozone (O3) - OMI<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h4>
 <p>Vertical distribution of of ozone (O3), retrieved from OMI measurements. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2O3OMIFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
 </section>
-<section id="airs-omi-joint">
-<h3>AIRS + OMI Joint<a class="headerlink" href="#airs-omi-joint" title="Permalink to this heading">#</a></h3>
-<section id="id2">
-<h4>Ozone (O3)<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<section id="id8">
+<h3>AIRS + OMI Joint<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<section id="id9">
+<h4>Ozone (O3) - AIRS+OMI<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h4>
 <p>Vertical distribution of of ozone (O3), retrieved from combined AIRS and OMI measurements, as opposed to AIRS Only and OMI Only ozone. Download from <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/TRPSDL2O3AIRSOMIFS_1/summary?keywords=TROPESS">GES DISC</a>.</p>
 </section>
 </section>
@@ -542,23 +601,42 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-products">Standard Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-products">Summary Products</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#airs-only">AIRS Only</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ammonia-nh3">Ammonia (NH3)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-monoxide-co">Carbon monoxide (CO)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methane-ch4">Methane (CH4)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3">Ozone (O3)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3-airs">Ozone (O3) - AIRS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo-delta-d">Semi-heavy water vapor (HDO / Delta-D)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omi-only">OMI Only</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3-omi">Ozone (O3) - OMI</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#airs-omi-joint">AIRS + OMI Joint</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ozone-o3-airs-omi">Ozone (O3) - AIRS+OMI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-products">Standard Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">AIRS Only</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperature-tatm">Air temperature (TATM)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ammonia (NH3)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Carbon monoxide (CO)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Methane (CH4)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ozone (O3) - AIRS</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#semi-heavy-water-vapor-hdo">Semi-heavy water vapor (HDO)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#water-vapor-h2o">Water vapor (H2O)</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omi-only">OMI Only</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">OMI Only</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Ozone (O3) - OMI</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#airs-omi-joint">AIRS + OMI Joint</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ozone (O3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">AIRS + OMI Joint</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Ozone (O3) - AIRS+OMI</a></li>
 </ul>
 </li>
 </ul>

@@ -12,8 +12,9 @@ parts:
     - file: intro-datasets
       sections:
       - file: intro-datasets-airs-omi 
+      - file: intro-datasets-cris-jpss-1
       - file: intro-datasets-cris-suomi-npp
-
+      
   - caption: Data Analysis
     chapters:
     - file: setup

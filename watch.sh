@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+. activate.sh
+
 echo 'open http://localhost:4000'
 
 livereload \

@@ -9,13 +9,8 @@ parts:
     - file: intro-instruments  
     - file: intro-collections  
     - file: intro-product-flavors  
-    - file: intro-datasets
-      sections:
-      - file: intro-datasets-airs-omi 
-      - file: intro-datasets-cris-jpss-1
-      - file: intro-datasets-cris-suomi-npp
-      
-  - caption: Data Analysis
+
+  - caption: Getting Started
     chapters:
     - file: setup
       sections:
@@ -27,7 +22,30 @@ parts:
       - file: quick-start-scatter-plot-methane-column
       - file: quick-start-gridded-plot-methane-column
       - file: quick-start-scatter-plot-methane-profile
-  - caption: Major Events
+
+  - caption: Datasets
+    chapters:
+    - file: intro-datasets-forward  
+      sections:
+      - file: intro-datasets-forward-airs-omi
+      - file: intro-datasets-forward-cris-jpss-1
+      - file: intro-datasets-forward-cris-snpp
+    - file: intro-datasets-special
+      sections:
+      - file: intro-datasets-special-megacities 
+      
+  # - caption: Data Analysis
+  #   chapters:
+  #   - file: working-methane
+  #     sections:
+  #     - file: plot-column
+  #     - file: plot-profile
+  #   - file: working-carbon-monoxide 
+  #     sections:
+  #     - file: plot-column
+  #     - file: plot-profile
+  
+  - caption: Global Events
     chapters:
     - file: brazilian-fires
       sections:

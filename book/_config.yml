@@ -37,3 +37,17 @@ html:
   use_issues_button: true
   use_repository_button: true
   google_analytics_id: G-N46YWZ8Q1W
+
+sphinx:
+  extra_extensions:
+  - sphinxext.rediraffe
+
+  # see: https://github.com/executablebooks/jupyter-book/issues/1048#issuecomment-708024696
+  # see: https://github.com/wpilibsuite/sphinxext-rediraffe
+  config:
+    # sphinxext.rediraffe
+    rediraffe_redirects:
+      intro-datasets: intro-datasets-forward 
+      intro-datasets-airs-omi: intro-datasets-forward-airs-omi
+      intro-datasets-cris-jpss-1: intro-datasets-forward-cris-jpss-1
+      intro-datasets-cris-suomi-npp: intro-datasets-forward-cris-snpp

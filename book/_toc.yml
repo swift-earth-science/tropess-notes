@@ -43,16 +43,16 @@ parts:
       - file: intro-datasets-special-megacities 
 
 
-  # - caption: Data Analysis
-  #   chapters:
-  #   - file: working-methane
-  #     sections:
-  #     - file: plot-column
-  #     - file: plot-profile
-  #   - file: working-carbon-monoxide 
-  #     sections:
-  #     - file: plot-column
-  #     - file: plot-profile
+  - caption: Data Analysis
+    chapters:
+    - file: working-methane
+      sections:
+      - file: working-methane-standard-plot-levels
+      - file: working-methane-summary-plot-partial-column
+    # - file: working-carbon-monoxide 
+    #   sections:
+    #   - file: plot-column
+    #   - file: plot-profile
 
   
   - caption: Global Events

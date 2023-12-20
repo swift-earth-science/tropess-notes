@@ -10,6 +10,7 @@ parts:
     - file: intro-collections  
     - file: intro-product-flavors  
 
+
   - caption: Getting Started
     chapters:
     - file: setup
@@ -23,6 +24,7 @@ parts:
       - file: quick-start-gridded-plot-methane-column
       - file: quick-start-scatter-plot-methane-profile
 
+
   - caption: Datasets
     chapters:
     - file: intro-datasets-forward  
@@ -30,10 +32,17 @@ parts:
       - file: intro-datasets-forward-airs-omi
       - file: intro-datasets-forward-cris-jpss-1
       - file: intro-datasets-forward-cris-snpp
+    
+    - file: intro-datasets-reanalysis  
+      sections:
+      - file: intro-datasets-reanalysis-airs
+      - file: intro-datasets-reanalysis-cris-snpp  
+    
     - file: intro-datasets-special
       sections:
       - file: intro-datasets-special-megacities 
-      
+
+
   # - caption: Data Analysis
   #   chapters:
   #   - file: working-methane
@@ -44,6 +53,7 @@ parts:
   #     sections:
   #     - file: plot-column
   #     - file: plot-profile
+
   
   - caption: Global Events
     chapters:

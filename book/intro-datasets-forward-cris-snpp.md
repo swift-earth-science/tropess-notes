@@ -1,4 +1,4 @@
-# CrIS SNPP
+# CrIS Suomi NPP
 
 These products are retrieved from [CrIS SNPP](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.
 

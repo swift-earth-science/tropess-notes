@@ -1,8 +1,8 @@
 # CrIS Suomi NPP
 
-These products are retrieved from [CrIS SNPP](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.
+These products are retrieved from [CrIS Suomi NPP](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.
 
-## Version 1 (V1)
+## CrIS Suomi NPP reanalysis Stream - Version 1 (V1)
 
 Data coverage time period:
 

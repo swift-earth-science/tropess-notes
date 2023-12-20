@@ -1,8 +1,8 @@
 # Megacities
 
-## CrIS SNPP
+## CrIS Suomi NPP
 
-These products are retrieved from [CrIS SNPP](intro-instruments) measurements for a 3º x 3º area centered on Beijing, Delhi, Karachi, Lagos, Los Angeles, Mexico City, Sao Paulo, and Tokyo cities.
+These products are retrieved from [CrIS Suomi NPP](intro-instruments) measurements for a 3º x 3º area centered on Beijing, Delhi, Karachi, Lagos, Los Angeles, Mexico City, Sao Paulo, and Tokyo cities.
 
 ### Beijing
 

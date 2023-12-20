@@ -1,6 +1,6 @@
 # AIRS + OMI 
 
-These products are retrieved from collocated AIRS and OMI measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.
+These products are retrieved from collocated [AIRS](intro-instruments) and [OMI)](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.
 
 ## Standard Products
 

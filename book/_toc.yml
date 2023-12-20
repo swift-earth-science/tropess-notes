@@ -45,14 +45,16 @@ parts:
 
   - caption: Data Analysis
     chapters:
+    - file: data-analysis-carbon-monoxide 
+      sections:
+      - file: data-analysis-carbon-monoxide-download-data
+      - file: data-analysis-carbon-monoxide-plot-levels
+      - file: data-analysis-carbon-monoxide-plot-column-xvmr
     - file: data-analysis-methane
       sections:
+      - file: data-analysis-methane-download-data
       - file: data-analysis-methane-plot-levels
-      - file: data-analysis-methane-plot-partial-column
-    # - file: working-carbon-monoxide 
-    #   sections:
-    #   - file: plot-column
-    #   - file: plot-profile
+      - file: data-analysis-methane-plot-partial-column-xvmr
 
   
   - caption: Global Events

@@ -1,4 +1,4 @@
-# Collections
+# Data Collections
 
 ## Forward Stream
 

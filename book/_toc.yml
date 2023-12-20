@@ -45,10 +45,10 @@ parts:
 
   - caption: Data Analysis
     chapters:
-    - file: working-methane
+    - file: data-analysis-methane
       sections:
-      - file: working-methane-standard-plot-levels
-      - file: working-methane-summary-plot-partial-column
+      - file: data-analysis-methane-plot-levels
+      - file: data-analysis-methane-plot-partial-column
     # - file: working-carbon-monoxide 
     #   sections:
     #   - file: plot-column

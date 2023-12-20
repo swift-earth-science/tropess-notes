@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. activate.sh
+source activate.sh
 
 echo 'open http://localhost:4000'
 

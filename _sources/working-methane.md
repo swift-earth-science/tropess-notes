@@ -1,4 +1,4 @@
-# Working with Methane
+# Methane (CH4)
 
 ```{tableofcontents}
 ```

@@ -1,8 +1,8 @@
 # AIRS
 
-These products are retrieved from AIRS measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method. 
+These products are retrieved from [AIRS](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method. 
 
-## Version 1 (V1)
+## AIRS Reanalysis Stream - Version 1 (V1)
 
 Data coverage time period:
 

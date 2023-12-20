@@ -203,22 +203,29 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Analysis</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="data-analysis-methane/">Methane (CH4)</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data-analysis-carbon-monoxide/">Carbon Monoxide (CO)</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-carbon-monoxide-download-data/">Download Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-carbon-monoxide-plot-levels/">Carbon Monoxide at select pressure levels (CO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-carbon-monoxide-plot-column-xvmr/">Carbon Monoxide Column (XO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data-analysis-methane/">Methane (CH4)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-download-data/">Download Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-plot-levels/">Methane at select pressure levels (CH4)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-plot-partial-column/">Methane Free Tropospheric Column (XCH4)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-plot-partial-column-xvmr/">Methane Free Tropospheric Column (XCH4)</a></li>
 </ul>
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Global Events</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="brazilian-fires/">Brazilian Fires (2022)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="brazilian-fires/">Brazilian Fires (2022)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="brazilian-fires-download-data/">Download Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="brazilian-fires-gridded-plot-ammonia-column/">Brazilian Fires - Ammonia (NH3) - CrIS JPSS-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="brazilian-fires-gridded-plot-carbon-monoxide-column/">Brazilian Fires - Carbon Monoxide (CO) - CrIS JPSS-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="brazilian-fires-gridded-plot-peroxyacetyl-nitrate-column/">Brazilian Fires - PeroxyAcetyl Nitrate (PAN) - CrIS JPSS-1</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="canadian-fires/">Canadian Fires (2023)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="canadian-fires/">Canadian Fires (2023)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="canadian-fires-download-data/">Download Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="canadian-fires-gridded-plot-carbon-monoxide-column/">Canadian Fires - Carbon Monoxide (CO) - CrIS JPSS-1</a></li>
 </ul>
@@ -474,9 +481,16 @@ document.write(`
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Analysis</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="data-analysis-carbon-monoxide/">Carbon Monoxide (CO)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-carbon-monoxide-download-data/">Download Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-carbon-monoxide-plot-levels/">Carbon Monoxide at select pressure levels (CO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-carbon-monoxide-plot-column-xvmr/">Carbon Monoxide Column (XO)</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="data-analysis-methane/">Methane (CH4)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-download-data/">Download Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-plot-levels/">Methane at select pressure levels (CH4)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-plot-partial-column/">Methane Free Tropospheric Column (XCH4)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-analysis-methane-plot-partial-column-xvmr/">Methane Free Tropospheric Column (XCH4)</a></li>
 </ul>
 </li>
 </ul>

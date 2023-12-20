@@ -10,7 +10,6 @@ parts:
     - file: intro-collections  
     - file: intro-product-flavors  
 
-
   - caption: Getting Started
     chapters:
     - file: setup
@@ -69,4 +68,8 @@ parts:
       sections:
       - file: canadian-fires-download-data
       - file: canadian-fires-gridded-plot-carbon-monoxide-column
-  
+
+  - caption: License & Citation
+    chapters:
+    - file: license  
+    - file: citation  

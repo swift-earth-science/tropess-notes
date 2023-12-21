@@ -54,6 +54,11 @@ parts:
       - file: data-analysis-methane-download-data
       - file: data-analysis-methane-plot-levels
       - file: data-analysis-methane-plot-partial-column-xvmr
+    - file: data-analysis-ozone
+      sections:
+      - file: data-analysis-ozone-download-data
+      - file: data-analysis-ozone-plot-levels
+      - file: data-analysis-ozone-plot-column-vcd
 
   
   - caption: Global Events

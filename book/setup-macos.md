@@ -1,18 +1,14 @@
-# Setup for macOS
+# Setup on macOS
 
->  Shell scripts are `bash`
+>  All shell scripts are `bash`
 
-## Misc
+## Xcode
 
-### Finder
-
-Show hidden files:
+Install Command Line Tools (CLT) for Xcode. This will install macOS compilers and libraries:
 
 ```bash
-defaults write com.apple.finder AppleShowAllFiles YES
+xcode-select --install
 ```
-
-Hold the 'Option/alt' key, then right click on the Finder icon in the dock and click Relaunch
 
 ## Homebrew
 
@@ -22,45 +18,21 @@ Install [Homebrew](https://brew.sh/):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## bash 5
+## System Packages
 
-```bash
-brew install bash
-```
-
-## git
-
-```bash
-brew install git
-```
-
-## coreutils, wget, curl
+### coreutils, wget, curl
 
 ```bash
 brew install coreutils wget curl 
 ```
 
-## cairo, geos
+### cairo, geos
 
 ```bash
 brew install cairo geos
 ```
 
-## Development Tools
-
-### Xcode
-
-Install Command Line Tools (CLT) for Xcode:
-
-```bash
-xcode-select --install
-```
-
-### Visual Studio Code
-
-Download and install from [Visual Studio Code](https://code.visualstudio.com/download) site.
-
-Open Visual Studio Code and press `Cmd + Shift + p`. Select `Shell Command: Install 'code' command in PATH`. 
+## Python Environment
 
 ### pyenv
 
@@ -69,4 +41,3 @@ Install Python version manager [pyenv](https://github.com/pyenv/pyenv)
 ```bash
 brew install pyenv
 ```
-

@@ -10,20 +10,6 @@ parts:
     - file: intro-collections  
     - file: intro-product-flavors  
 
-  - caption: Getting Started
-    chapters:
-    - file: setup
-      sections:
-      - file: setup-macos
-      - file: data-access-macos
-    - file: quick-start 
-      sections:
-      - file: quick-start-download-data  
-      - file: quick-start-scatter-plot-methane-column
-      - file: quick-start-gridded-plot-methane-column
-      - file: quick-start-scatter-plot-methane-profile
-
-
   - caption: Datasets
     chapters:
     - file: intro-datasets-forward  
@@ -41,6 +27,24 @@ parts:
       sections:
       - file: intro-datasets-special-megacities 
 
+  - caption: Setup  
+    chapters:
+    - file: setup-macos 
+
+  - caption: Data Access
+    chapters:
+    - file: data-access-macos
+
+  - caption: Quick Start
+    chapters:
+    - file: quick-start-download-data  
+    - file: quick-start-scatter-plot-methane-column
+    - file: quick-start-gridded-plot-methane-column
+    - file: quick-start-scatter-plot-methane-profile
+
+  - caption: How to Run
+    chapters:
+    - file: how-to-run-macos
 
   - caption: Data Analysis
     chapters:

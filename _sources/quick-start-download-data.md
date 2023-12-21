@@ -2,22 +2,38 @@
 
 ## Browse products
 
-Browse TROPESS products:
+[TROPESS products](https://disc.gsfc.nasa.gov/datasets?keywords=tropess) are available on Goddard Earth Sciences Data and Information Services Center (GES DISC). 
 
+::::{tab-set}
+:::{tab-item} macOS
+:sync: macos
+In Terminal:
 ```bash
 open https://disc.gsfc.nasa.gov/datasets?keywords=tropess
 ```
+:::
+::::
 
-We will be using CrIS JPSS-1 Methane forward stream. To see all the available data for CrIS JPSS-1 Methane (CH4) go to the CrIS JPSS-1 Online Archive for CH4:
+We will be using CrIS JPSS-1 Methane forward stream. To see all the available data for CrIS JPSS-1 Methane (CH4), go to the [CrIS JPSS-1 CH4 Archive](https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2CH4CRS1FS.1).
 
+::::{tab-set}
+:::{tab-item} macOS
+:sync: macos
+In Terminal:
 ```bash
 open https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2CH4CRS1FS.1
 ```
+:::
+::::
 
 ## Download some sample data
 
 Download the TROPESS Summary Methane (CH4) product for May 16, 2023:
 
+::::{tab-set}
+:::{tab-item} macOS
+:sync: macos
+Open Terminal and run the following commands:
 ```bash
 pushd ./data
 
@@ -55,3 +71,5 @@ https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Standard/TRPSDL2CH4CRS1FS.1
 
 popd     
 ```
+:::
+::::

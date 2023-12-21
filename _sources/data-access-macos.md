@@ -1,4 +1,4 @@
-# Data Access for macOS
+# Data Access on macOS
 
 ## Account
 
@@ -64,4 +64,3 @@ echo "HTTP.COOKIEJAR=$HOME/.urs_cookies" > ~/.daprc
 ## Additional Information
 
 [Overview of GES DISC Data Access](https://disc.gsfc.nasa.gov/data-access)
-

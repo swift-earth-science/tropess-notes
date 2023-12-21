@@ -69,7 +69,7 @@ parts:
       - file: canadian-fires-download-data
       - file: canadian-fires-gridded-plot-carbon-monoxide-column
 
-  - caption: License & Citation
+  - caption: Miscellaneous
     chapters:
     - file: license  
     - file: citation  

@@ -216,17 +216,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../data-analysis-methane-plot-partial-column-xvmr/">Methane Free Tropospheric Column (XCH4)</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data-analysis-ozone/">Ozone (O3)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data-analysis-ozone-download-data/">Download Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data-analysis-ozone-plot-levels/">Ozone at select pressure levels (O3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data-analysis-ozone-plot-column-vcd/">Ozone Column (O3 VCD)</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Global Events</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../brazilian-fires/">Brazilian Fires (2022)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../brazilian-fires/">Brazilian Fires (2022)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-download-data/">Download Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-ammonia-column/">Brazilian Fires - Ammonia (NH3) - CrIS JPSS-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-carbon-monoxide-column/">Brazilian Fires - Carbon Monoxide (CO) - CrIS JPSS-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../brazilian-fires-gridded-plot-peroxyacetyl-nitrate-column/">Brazilian Fires - PeroxyAcetyl Nitrate (PAN) - CrIS JPSS-1</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../canadian-fires/">Canadian Fires (2023)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../canadian-fires/">Canadian Fires (2023)</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../canadian-fires-download-data/">Download Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../canadian-fires-gridded-plot-carbon-monoxide-column/">Canadian Fires - Carbon Monoxide (CO) - CrIS JPSS-1</a></li>
 </ul>
@@ -468,7 +474,7 @@ document.write(`
 </section>
 <section id="read-data-variables">
 <h2>Read data variables<a class="headerlink" href="#read-data-variables" title="Permalink to this heading">#</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">x</span></code> variable is volume mixing ratio (VMR) of Carbon Monoxide relative to dry air at different pressure levels, in ppbv - May 16th, 2023.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">x</span></code> variable is volume mixing ratio (VMR) of Carbon Monoxide relative to dry air at different pressure levels - May 16th, 2023.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Open the netCDF file</span>
@@ -489,7 +495,7 @@ document.write(`
 </section>
 <section id="create-plots">
 <h2>Create plots<a class="headerlink" href="#create-plots" title="Permalink to this heading">#</a></h2>
-<p>Create plots for a few pressure levels higher than 261 hPa (11km and lower altitude).</p>
+<p>Create plots for a few pressure levels higher than 261 hPa (11km and lower altitude), in ppbv.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert x_all to parts per billion</span>

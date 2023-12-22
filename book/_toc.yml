@@ -34,6 +34,7 @@ parts:
   - caption: Data Access
     chapters:
     - file: data-access-macos
+    - file: data-access-linux
 
   - caption: Quick Start
     chapters:
@@ -45,6 +46,8 @@ parts:
   - caption: How to Run
     chapters:
     - file: how-to-run-macos
+    - file: how-to-run-google-colab
+    - file: how-to-run-sagemaker-studio-lab
 
   - caption: Data Analysis
     chapters:

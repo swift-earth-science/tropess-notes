@@ -10,29 +10,29 @@
 
 Create a `.netrc` file in your home directory.
 
- ```sh
+```sh
 touch ~/.netrc
- ```
+```
 
 Populate `.netrc` file with credentials (where <uid> is your user name and <password> is your Earthdata Login password without the brackets):
 
- ```sh
+```sh
 echo 'machine urs.earthdata.nasa.gov login <uid> password <password>' >> ~/.netrc 
- ```
+```
 
 Create a cookie file. This file will be used to persist sessions across calls to wget.
 
- ```sh
+```sh
 touch ~/.urs_cookies
- ```
+```
 
 > Note: you may need to re-create `.urs_cookies` in case you have already executed `curl` or `wget` without valid authentication.
 
 Change permissions to `.netrc` and `.urs_cookies` files (so only you can access it):
 
- ```sh
+```sh
 chmod 0600 ~/.netrc ~/.urs_cookies
- ```
+```
 
 Test:
 

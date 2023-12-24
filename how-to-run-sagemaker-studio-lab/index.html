@@ -444,6 +444,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signing-up">Signing up</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-amazon-sagemaker-studio-lab-with-this-book">How to use Amazon SageMaker Studio Lab with this book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-python-packages">Install Python packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-data-directory">Create data directory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-data-access">Configure data access</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -461,11 +467,52 @@ document.write(`
 <section id="signing-up">
 <h2>Signing up<a class="headerlink" href="#signing-up" title="Permalink to this heading">#</a></h2>
 <p>Request an account for Amazon SageMaker Studio Lab <a class="reference external" href="https://studiolab.sagemaker.aws/requestAccount">here</a> and complete the sign up process.</p>
+<p>Once you have signed up navigate to <a class="reference external" href="https://studiolab.sagemaker.aws/">https://studiolab.sagemaker.aws/</a> and start a <strong>CPU</strong> runtime.</p>
 </section>
 <section id="how-to-use-amazon-sagemaker-studio-lab-with-this-book">
 <h2>How to use Amazon SageMaker Studio Lab with this book<a class="headerlink" href="#how-to-use-amazon-sagemaker-studio-lab-with-this-book" title="Permalink to this heading">#</a></h2>
 <p>Throughout the book when you see a button like this <a target="_blank" href="https://studiolab.sagemaker.aws/import/github/swiftsoftwaregroup/tropess-notes-python/blob/main/book/quick-start-scatter-plot-methane-column.ipynb">
 <img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open in SageMaker Studio Lab"/></a>, just click it to open the code automatically in Amazon SageMaker Studio Lab.</p>
+</section>
+<section id="initial-setup">
+<h2>Initial setup<a class="headerlink" href="#initial-setup" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>You have to go through this every time you launch a new Google Colab runtime. However if you reuse the same runtime this has to be done just once. After that the configuration will be reused.</p>
+</div></blockquote>
+<p>Open a sample notebook in SageMaker Studio Lab: click this button <a target="_blank" href="https://studiolab.sagemaker.aws/import/github/swiftsoftwaregroup/tropess-notes-python/blob/main/book/quick-start-scatter-plot-methane-column.ipynb">
+<img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open in SageMaker Studio Lab"/></a></p>
+<p>In the “Notebook preview” page click the large “Copy to project” button. Then click “Copy notebook only”.</p>
+<section id="install-python-packages">
+<h3>Install Python packages<a class="headerlink" href="#install-python-packages" title="Permalink to this heading">#</a></h3>
+<blockquote>
+<div><p>NOTE: Any installed extensions and packages installed on your <code class="docutils literal notranslate"><span class="pre">default</span></code> environment will persist in your project, so you do not need to install your packages for every project runtime session. However, extensions and packages installed on your sagemaker-distribution environment will not persist, so you will need to install new packages during your next session. Thus, it is highly recommended to install packages within your notebook to ensure that the packages are installed in the intended environment.</p>
+</div></blockquote>
+<p>In SageMaker Studio Lab open Terminal and type the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># list Anaconda environments</span>
+conda<span class="w"> </span>env<span class="w"> </span>list
+
+<span class="c1"># activate the default Anaconda environment. This is the environment used by the Jupyter notebooks</span>
+conda<span class="w"> </span>activate<span class="w"> </span>default
+
+<span class="c1"># download requirements-sagemaker.txt from GtiHub </span>
+wget<span class="w"> </span>https://raw.githubusercontent.com/swiftsoftwaregroup/tropess-notes-python/main/book/requirements-sagemaker.txt
+
+<span class="c1"># install the requirements</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-sagemaker.txt
+</pre></div>
+</div>
+</section>
+<section id="create-data-directory">
+<h3>Create data directory<a class="headerlink" href="#create-data-directory" title="Permalink to this heading">#</a></h3>
+<p>In In SageMaker Studio Lab Terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>./data
+</pre></div>
+</div>
+</section>
+<section id="configure-data-access">
+<h3>Configure data access<a class="headerlink" href="#configure-data-access" title="Permalink to this heading">#</a></h3>
+<p>In In SageMaker Studio Lab Terminal follow the steps in <a class="reference internal" href="../data-access-linux/"><span class="doc std std-doc">Data Access on Linux</span></a> to setup data access.</p>
+</section>
 </section>
 </section>
 
@@ -538,6 +585,12 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signing-up">Signing up</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-amazon-sagemaker-studio-lab-with-this-book">How to use Amazon SageMaker Studio Lab with this book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-python-packages">Install Python packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-data-directory">Create data directory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-data-access">Configure data access</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

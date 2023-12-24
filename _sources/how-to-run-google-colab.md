@@ -20,7 +20,7 @@ Throughout the book, when you see a button like this <a target="_blank" href="ht
 
 > You have to go through this every time you launch a new Google Colab runtime. However if you reuse the same runtime this has to be done just once. After that the configuration will be reused.
 
-Open Google Colab, click this button <a target="_blank" href="https://colab.research.google.com/github/swiftsoftwaregroup/tropess-notes-python/blob/main/book/quick-start-scatter-plot-methane-column.ipynb">
+Open a sample notebook in Google Colab: click this button <a target="_blank" href="https://colab.research.google.com/github/swiftsoftwaregroup/tropess-notes-python/blob/main/book/quick-start-scatter-plot-methane-column.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ### Install Python packages
@@ -28,10 +28,10 @@ Open Google Colab, click this button <a target="_blank" href="https://colab.rese
 In Google Colab open Terminal and type the following commands:
 
 ```bash
-# download requirements.xtx from GtiHub 
+# download requirements-colab.txt from GtiHub 
 wget https://raw.githubusercontent.com/swiftsoftwaregroup/tropess-notes-python/main/book/requirements-colab.txt
 
-# istall the requirement
+# install the requirement
 pip install -r requirements-colab.txt
 ```
 

@@ -15,7 +15,7 @@ Throughout the book when you see a button like this <a target="_blank" href="htt
  
 ## Initial setup
 
-> You have to go through this every time you launch a new Google Colab runtime. However if you reuse the same runtime this has to be done just once. After that the configuration will be reused.
+> You have to go through this every time you launch a new SageMaker Studio Lab runtime. However if you reuse the same runtime this has to be done just once. After that the configuration will be reused.
 
 Open a sample notebook in SageMaker Studio Lab: click this button <a target="_blank" href="https://studiolab.sagemaker.aws/import/github/swiftsoftwaregroup/tropess-notes-python/blob/main/book/quick-start-scatter-plot-methane-column.ipynb">
   <img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open in SageMaker Studio Lab"/></a>  

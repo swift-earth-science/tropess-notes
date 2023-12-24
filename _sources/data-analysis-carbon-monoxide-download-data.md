@@ -1,27 +1,27 @@
 # Download Data
 
+> Download the TROPESS CO products for May 16, 2023 into  the `./data` directory.
+
 ## Browse products
 
-Browse TROPESS products:
+Browse [TROPESS products](https://disc.gsfc.nasa.gov/datasets?keywords=tropess):
 
 ```bash
 open https://disc.gsfc.nasa.gov/datasets?keywords=tropess
 ```
 
-We will be using CrIS JPSS-1 Carbon Monoxide forward stream. To see all the available data for CrIS JPSS-1 Carbon Monoxide (CO) go to the CrIS JPSS-1 Online Archive for CO:
+We will be using CrIS JPSS-1 Carbon Monoxide forward stream. To see all the available data for CrIS JPSS-1 Carbon Monoxide (CO) go to the [CrIS JPSS-1 CO Online Archive](https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1):
 
 ```bash
 open https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1
 ```
 
-## Download some sample data
-
-Download the TROPESS products for May 16, 2023:
+## Download the data files
 
 ```bash
-pushd ./data
+mkdir -p ./data
 
-# download the data files
+pushd ./data
 
 # standard product (profile)
 data_file='TROPESS_CrIS-JPSS1_L2_Standard_CO_20230516_MUSES_R1p20_FS_F0p6.nc'
@@ -35,7 +35,15 @@ wget --load-cookies ~/.urs_cookies --save-cookies ~/.urs_cookies \
      --auth-no-challenge=on --keep-session-cookies --content-disposition --continue \
      https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1/2023/$data_file
 
-# download the user guides and README
+popd
+```
+
+## Download user guides
+
+```bash
+mkdir -p ./data
+
+pushd ./data
 
 # standard
 user_guide='TROPESS-AIRS-CrIS_CO_L2_Product_User_Guide.pdf'

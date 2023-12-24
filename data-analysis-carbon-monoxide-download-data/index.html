@@ -443,7 +443,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browse-products">Browse products</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-some-sample-data">Download some sample data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data-files">Download the data files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-user-guides">Download user guides</a></li>
 </ul>
             </nav>
         </div>
@@ -457,23 +458,25 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="download-data">
 <h1>Download Data<a class="headerlink" href="#download-data" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>Download the TROPESS CO products for May 16, 2023 into  the <code class="docutils literal notranslate"><span class="pre">./data</span></code> directory.</p>
+</div></blockquote>
 <section id="browse-products">
 <h2>Browse products<a class="headerlink" href="#browse-products" title="Permalink to this heading">#</a></h2>
-<p>Browse TROPESS products:</p>
+<p>Browse <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets?keywords=tropess">TROPESS products</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open<span class="w"> </span>https://disc.gsfc.nasa.gov/datasets?keywords<span class="o">=</span>tropess
 </pre></div>
 </div>
-<p>We will be using CrIS JPSS-1 Carbon Monoxide forward stream. To see all the available data for CrIS JPSS-1 Carbon Monoxide (CO) go to the CrIS JPSS-1 Online Archive for CO:</p>
+<p>We will be using CrIS JPSS-1 Carbon Monoxide forward stream. To see all the available data for CrIS JPSS-1 Carbon Monoxide (CO) go to the <a class="reference external" href="https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1">CrIS JPSS-1 CO Online Archive</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open<span class="w"> </span>https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1
 </pre></div>
 </div>
 </section>
-<section id="download-some-sample-data">
-<h2>Download some sample data<a class="headerlink" href="#download-some-sample-data" title="Permalink to this heading">#</a></h2>
-<p>Download the TROPESS products for May 16, 2023:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">pushd</span><span class="w"> </span>./data
+<section id="download-the-data-files">
+<h2>Download the data files<a class="headerlink" href="#download-the-data-files" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>./data
 
-<span class="c1"># download the data files</span>
+<span class="nb">pushd</span><span class="w"> </span>./data
 
 <span class="c1"># standard product (profile)</span>
 <span class="nv">data_file</span><span class="o">=</span><span class="s1">&#39;TROPESS_CrIS-JPSS1_L2_Standard_CO_20230516_MUSES_R1p20_FS_F0p6.nc&#39;</span>
@@ -487,7 +490,15 @@ wget<span class="w"> </span>--load-cookies<span class="w"> </span>~/.urs_cookies
 <span class="w">     </span>--auth-no-challenge<span class="o">=</span>on<span class="w"> </span>--keep-session-cookies<span class="w"> </span>--content-disposition<span class="w"> </span>--continue<span class="w"> </span><span class="se">\</span>
 <span class="w">     </span>https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Summary/TRPSYL2COCRS1FS.1/2023/<span class="nv">$data_file</span>
 
-<span class="c1"># download the user guides and README</span>
+<span class="nb">popd</span>
+</pre></div>
+</div>
+</section>
+<section id="download-user-guides">
+<h2>Download user guides<a class="headerlink" href="#download-user-guides" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>./data
+
+<span class="nb">pushd</span><span class="w"> </span>./data
 
 <span class="c1"># standard</span>
 <span class="nv">user_guide</span><span class="o">=</span><span class="s1">&#39;TROPESS-AIRS-CrIS_CO_L2_Product_User_Guide.pdf&#39;</span>
@@ -580,7 +591,8 @@ https://tropess.gesdisc.eosdis.nasa.gov/data/TROPESS_Standard/TRPSDL2COCRS1FS.1/
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browse-products">Browse products</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-some-sample-data">Download some sample data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data-files">Download the data files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-user-guides">Download user guides</a></li>
 </ul>
   </nav></div>
 

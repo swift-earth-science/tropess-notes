@@ -10,6 +10,6 @@ Assorted Jupyter notebooks for TROPESS data access and analysis.
 
 You can find the published book here: [TROPESS Notes](https://swiftsoftwaregroup.github.io/tropess-notes/)
 
-# Book Development
+## Book Development
 
 For book development see the [README](dev/README.md) in `dev`.

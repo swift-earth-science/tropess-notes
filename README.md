@@ -4,6 +4,8 @@
 
 Assorted Jupyter notebooks for TROPESS data access and analysis. 
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/swiftsoftwaregroup/tropess-notes-python)
+
 ## Published Book
 
 You can find the published book here: [TROPESS Notes](https://swiftsoftwaregroup.github.io/tropess-notes/)

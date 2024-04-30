@@ -33,6 +33,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 Open Source License Approved by [Swift Software Group](https://swiftsoftwaregroup.com)
 
 APACHE LICENSE, VERSION 2.0
-Text version: https://www.apache.org/licenses/LICENSE-2.0.txt
-SPDX short identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
-OSI Approved License: https://opensource.org/licenses/Apache-2.0
+
+- Text version: https://www.apache.org/licenses/LICENSE-2.0.txt
+- SPDX short identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
+- OSI Approved License: https://opensource.org/licenses/Apache-2.0

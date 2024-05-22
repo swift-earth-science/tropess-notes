@@ -5,7 +5,7 @@ authors:
   given-names: "Valentin"
   orcid: "https://orcid.org/0009-0008-8961-4573"
 title: "TROPESS Notes - Assorted Jupyter notebooks for TROPESS data access and analysis."
-version: 0.2.0
-doi: 10.5281/zenodo.8031285
+version: 0.5.0
+doi: 10.5281/zenodo.8012145
 date-released: 2023-06-07
 url: "https://tropess-notes.swiftearthscience.org"

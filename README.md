@@ -4,7 +4,7 @@ Assorted Jupyter notebooks for TROPESS data access and analysis.
 
 ## Published Book
 
-You can find the published book here: [TROPESS Notes](https://tropess-notes.swiftearthscience.org/)
+You can find the published book at [https://tropess-notes.swiftearthscience.org](https://tropess-notes.swiftearthscience.org/)
 
 [![DOI](https://zenodo.org/badge/650417988.svg)](https://zenodo.org/badge/latestdoi/650417988)
 

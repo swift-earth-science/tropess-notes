@@ -49,7 +49,9 @@ sphinx:
     html_baseurl: 'https://tropess-notes.swiftearthscience.org/'
     sitemap_url_scheme: '{link}'
     sitemap_locales: []
+
     # sphinxext.rediraffe
+
     rediraffe_redirects:
       quick-start: quick-start-scatter-plot-methane-column
       intro-datasets: intro-datasets-forward 

@@ -18,8 +18,6 @@ For book development see the [README](dev/README.md) in `dev`.
 
 [Discussion Forum](https://github.com/orgs/swift-earth-science/discussions): Please use the forum for questions, discussing ideas, and joining the community.
 
----
-
 ## Copyright and Licensing Info
 
 Copyright (c) 2023-2024 Swift Software Group, Inc. ("SSG"). All rights reserved.

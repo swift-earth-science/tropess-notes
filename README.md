@@ -16,7 +16,7 @@ For book development see the [README](dev/README.md) in `dev`.
 
 ## Community Contributions
 
-[[Discussion Forum](https://github.com/swift-conductor/conductor/discussions)](https://github.com/orgs/swift-earth-science/discussions): Please use the forum for questions, discussing ideas, and joining the community.
+[Discussion Forum](https://github.com/orgs/swift-earth-science/discussions): Please use the forum for questions, discussing ideas, and joining the community.
 
 ---
 

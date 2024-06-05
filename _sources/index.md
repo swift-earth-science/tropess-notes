@@ -12,9 +12,7 @@ The TROPESS Notes project provides user-friendly guides containing reproducible 
 These notebooks are designed to enable scientists, regardless of 
 their technical background, to access, process, and analyze data on key atmospheric constituents such as ozone, methane, and carbon monoxide.
 
-> TROPESS === **TR**opospheric **O**zone and its **P**recursors from **E**arth **S**ystem **S**ounding
-
-See the [TROPESS](https://tes.jpl.nasa.gov/tropess/) web site for more details about the project.
+See the [TROPESS](https://tes.jpl.nasa.gov/tropess/) (**TR**opospheric **O**zone and its **P**recursors from **E**arth **S**ystem **S**ounding) web site for more details about the project.
 
 If you use this book, please cite it as below:
 

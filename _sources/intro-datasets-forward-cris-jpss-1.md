@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "CrIS JPSS-1 / NOAA-20 Data Collections: Forward Stream: Standard and Summary Products."
+---
+
 # CrIS JPSS-1 / NOAA-20
 
 These products are retrieved from [CrIS JPSS-1 / NOAA-20](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.

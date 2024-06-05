@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "TROPESS Data Products come in two flavors: Standard and Summary."
+---
+
 # Product Flavors
 
 The TROPESS data products come in two different flavors: Standard and Summary  

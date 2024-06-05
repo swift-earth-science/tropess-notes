@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "These instruments are currently supported by the TROPESS project."
+---
+
 # Instruments
 
 The following instruments are supported by the TROPESS project currently.  

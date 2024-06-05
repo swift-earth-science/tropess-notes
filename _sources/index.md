@@ -1,12 +1,20 @@
+---
+myst:
+  html_meta:
+    "description": "The TROPESS Notes project provides user-friendly guides containing reproducible methods for analyzing TROPESS Level-2 atmospheric data derived from multiple satellite missions."
+---
 # Welcome to TROPESS Notes
 
 [![DOI](https://zenodo.org/badge/650417988.svg)](https://zenodo.org/badge/latestdoi/650417988)
 
+The TROPESS Notes project provides user-friendly guides containing reproducible methods for analyzing [TROPESS Level-2](https://disc.gsfc.nasa.gov/information/mission-project?title=TROPESS) atmospheric data products derived from multiple satellite missions. 
+
+These notebooks are designed to enable scientists, regardless of 
+their technical background, to access, process, and analyze data on key atmospheric constituents such as ozone, methane, and carbon monoxide.
+
 > TROPESS === **TR**opospheric **O**zone and its **P**recursors from **E**arth **S**ystem **S**ounding
 
 See the [TROPESS](https://tes.jpl.nasa.gov/tropess/) web site for more details about the project.
-
-TROPESS Notes is a Jupyter book about TROPESS data products. It describes a few data use cases and provides sample code that can be used as a starter for data exploration. This book does not go in-depth into any particular topic.
 
 If you use this book, please cite it as below:
 

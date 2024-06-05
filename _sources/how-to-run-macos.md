@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "How to run notebooks locally on macOS."
+---
+
 # Running on macOS
 
 First make sure you have done the [setup on macOS](setup-macos). 

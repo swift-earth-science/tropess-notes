@@ -1,7 +1,7 @@
 ---
 myst:
   html_meta:
-    "description": "The TROPESS Notes code si licensed under Apache License, Version 2.0."
+    "description": "The TROPESS Notes code is licensed under Apache License, Version 2.0."
 ---
 
 # License

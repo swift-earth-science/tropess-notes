@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "Download CrIS JPSS-1 Carbon Monoxide (CO) data from GES DISC."
+---
+
 # Download Data
 
 > Download the TROPESS CO products for May 16, 2023 into  the `./data` directory.

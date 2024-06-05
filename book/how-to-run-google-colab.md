@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "How to run notebooks in Google Colab."
+---
+
 # Running in Google Colab
 
  [Google Colab](https://colab.research.google.com/) or Colaboratory is a great place to run Jupyter notebooks, with lots of additional features, like GPUs, storage in Github or Google Drive, and access to Google Cloud.

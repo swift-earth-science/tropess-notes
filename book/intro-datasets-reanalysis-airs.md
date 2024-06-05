@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "AIRS Data Collections: Reanalysis Stream: Summary Products."
+---
+
 # AIRS
 
 These products are retrieved from [AIRS](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method. 

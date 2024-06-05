@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "These products are retrieved from CrIS Suomi NPP measurements for a 3º x 3º area centered on Beijing, Delhi, Karachi, Lagos, Los Angeles, Mexico City, Sao Paulo, and Tokyo cities."
+---
+
 # Megacities
 
 ## CrIS Suomi NPP

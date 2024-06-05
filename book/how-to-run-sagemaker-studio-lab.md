@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "How to run notebooks in Amazon SageMaker Studio Lab."
+---
+
 # Running in Amazon SageMaker Studio Lab
 
 [Amazon SageMaker Studio Lab](https://studiolab.sagemaker.aws/) is a free service that gives users access to AWS compute resources, in an environment based on open-source JupyterLab. 

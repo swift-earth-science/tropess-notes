@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "CrIS Suomi NPP Data Collections: Reanalysis Stream: Summary Products."
+---
+
 # CrIS Suomi NPP
 
 These products are retrieved from [CrIS Suomi NPP](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.

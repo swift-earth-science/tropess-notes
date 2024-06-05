@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "How to setup development environment on macOS."
+---
+
 # Setup on macOS
 
 >  All shell scripts are `bash`

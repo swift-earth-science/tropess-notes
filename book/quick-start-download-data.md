@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "How to download the data for the Quick Start demo."
+---
+
 # Download Data
 
 ## Browse products

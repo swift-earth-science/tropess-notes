@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "AIRS + OMI Data Collections: Forward Stream: Standard and Summary Products."
+---
+
 # AIRS + OMI 
 
 These products are retrieved from collocated [AIRS](intro-instruments) and [OMI)](intro-instruments) measurements via the [Optimal estimation](https://en.wikipedia.org/wiki/Optimal_estimation) method.

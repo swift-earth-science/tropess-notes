@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    "description": "TROPESS Data Collections: Forward Stream, Reanalysis Stream, and Special Collections."
+---
+
 # Data Collections
 
 ## Forward Stream
